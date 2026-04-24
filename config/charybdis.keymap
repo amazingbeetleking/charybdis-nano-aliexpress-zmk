@@ -182,25 +182,26 @@
     combo_CAPS {
       key-positions = <12 17>;
       bindings = <&kp CAPSLOCK>;
-      layers = <BASE>;
+      layers = <BASE SCR>;
     };
+
 
     combo_new_window {
       key-positions = <7 8>;
       bindings = <&kp LG(E)>;
-      layers = <BASE>;
+      layers = <BASE SCR>;
     };
 
     combo_close_1 {
       key-positions = <20 21>;
       bindings = <&kp LA(F4)>;
-      layers = <BASE>;
+      layers = <BASE SCR>;
     };
 
     combo_close_2 {
       key-positions = <28 29>;
       bindings = <&kp LA(F4)>;
-      layers = <BASE>;
+      layers = <BASE SCR>;
     };
 
     combo_back {
@@ -218,7 +219,7 @@
     combo_luanguage {
       key-positions = <13 16>;
       bindings = <&kp LG(SPACE)>;
-      layers = <BASE>;
+      layers =<BASE SCR>;
     };
 
     combo_unlock {
@@ -230,7 +231,7 @@
     combo_del {
       key-positions = <23 24>;
       bindings = <&kp DEL>;
-      layers = <BASE>;
+      layers = <BASE SCR>;
     };
   };
 
