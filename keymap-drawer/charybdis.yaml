@@ -297,16 +297,16 @@ combos:
   l: [Base]
 - p: [12, 17]
   k: $$mdi:apple-keyboard-caps$$
-  l: [Base]
+  l: [Base, Scroll]
 - p: [7, 8]
   k: Gui+E
-  l: [Base]
+  l: [Base, Scroll]
 - p: [20, 21]
   k: Alt+F4
-  l: [Base]
+  l: [Base, Scroll]
 - p: [28, 29]
   k: Alt+F4
-  l: [Base]
+  l: [Base, Scroll]
 - p: [17, 18]
   k: Alt+$$mdi:arrow-left-bold$$
   l: [Navigation]
@@ -315,10 +315,10 @@ combos:
   l: [Navigation]
 - p: [13, 16]
   k: Gui+$$mdi:keyboard-space$$
-  l: [Base]
+  l: [Base, Scroll]
 - p: [0, 4]
   k: '&studio_unlock'
   l: [Base]
 - p: [23, 24]
   k: $$mdi:backspace-reverse-outline$$
-  l: [Base]
+  l: [Base, Scroll]
