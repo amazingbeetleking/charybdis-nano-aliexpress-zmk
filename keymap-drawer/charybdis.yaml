@@ -298,6 +298,7 @@ combos:
 - p: [12, 17]
   k: $$mdi:apple-keyboard-caps$$
   l: [Base, Scroll]
+  o: -0.3
 - p: [7, 8]
   k: Gui+E
   l: [Base, Scroll]
@@ -316,6 +317,7 @@ combos:
 - p: [13, 16]
   k: Gui+$$mdi:keyboard-space$$
   l: [Base, Scroll]
+  o: 0.3
 - p: [0, 4]
   k: '&studio_unlock'
   l: [Base]
