@@ -88,7 +88,7 @@ def apply_offsets(yaml_path, combos, groups):
         # После строки l: вставляем смещение
         if current_combo_keys and stripped.startswith("l:"):
             offset = offsets_map[current_combo_keys]
-            result.append(f"  o: {{y: {offset}}}\n")
+            result.append(f"  o: {offset}\n")
             current_combo_keys = None
 
     with open(yaml_path, "w") as f:
