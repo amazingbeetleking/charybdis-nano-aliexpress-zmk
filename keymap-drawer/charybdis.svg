@@ -260,10 +260,10 @@ path.combo { stroke-width: 1; stroke: gray; fill: none; }
 </text>
 </g>
 <g class="combo combopos-2">
-<path d="M364,84 l-205,0" class="combo"/>
-<path d="M364,84 l205,0" class="combo"/>
-<rect rx="6" ry="6" x="350" y="71" width="28" height="26" class="combo"/>
-<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="357" y="77" height="14" width="14.0" class="combo tap glyph mdi:apple-keyboard-caps"/>
+<path d="M252,84 l-93,0" class="combo"/>
+<path d="M252,84 l317,0" class="combo"/>
+<rect rx="6" ry="6" x="238" y="71" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="245" y="77" height="14" width="14.0" class="combo tap glyph mdi:apple-keyboard-caps"/>
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="602" y="18" width="28" height="26" class="combo"/>
@@ -278,10 +278,10 @@ path.combo { stroke-width: 1; stroke: gray; fill: none; }
 <text x="672" y="154" class="combo tap">Alt+F4</text>
 </g>
 <g class="combo combopos-6">
-<path d="M364,91 l-149,0" class="combo"/>
-<path d="M364,91 l149,0" class="combo"/>
-<rect rx="6" ry="6" x="350" y="78" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="357" y="84" height="14" width="14.0" class="combo tap glyph mdi:keyboard-space"/>
+<path d="M448,91 l-233,0" class="combo"/>
+<path d="M448,91 l65,0" class="combo"/>
+<rect rx="6" ry="6" x="434" y="78" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="441" y="84" height="14" width="14.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
 <g class="combo combopos-7">
 <path d="M140,42 l-93,6" class="combo"/>
@@ -1181,10 +1181,10 @@ path.combo { stroke-width: 1; stroke: gray; fill: none; }
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<path d="M364,84 l-205,0" class="combo"/>
-<path d="M364,84 l205,0" class="combo"/>
-<rect rx="6" ry="6" x="350" y="71" width="28" height="26" class="combo"/>
-<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="357" y="77" height="14" width="14.0" class="combo tap glyph mdi:apple-keyboard-caps"/>
+<path d="M252,84 l-93,0" class="combo"/>
+<path d="M252,84 l317,0" class="combo"/>
+<rect rx="6" ry="6" x="238" y="71" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="245" y="77" height="14" width="14.0" class="combo tap glyph mdi:apple-keyboard-caps"/>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="602" y="18" width="28" height="26" class="combo"/>
@@ -1199,10 +1199,10 @@ path.combo { stroke-width: 1; stroke: gray; fill: none; }
 <text x="672" y="154" class="combo tap">Alt+F4</text>
 </g>
 <g class="combo combopos-4">
-<path d="M364,91 l-149,0" class="combo"/>
-<path d="M364,91 l149,0" class="combo"/>
-<rect rx="6" ry="6" x="350" y="78" width="28" height="26" class="combo"/>
-<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="357" y="84" height="14" width="14.0" class="combo tap glyph mdi:keyboard-space"/>
+<path d="M448,91 l-233,0" class="combo"/>
+<path d="M448,91 l65,0" class="combo"/>
+<rect rx="6" ry="6" x="434" y="78" width="28" height="26" class="combo"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="441" y="84" height="14" width="14.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
 <g class="combo combopos-5">
 <rect rx="6" ry="6" x="210" y="134" width="28" height="26" class="combo"/>
