@@ -9,7 +9,7 @@ import sys
 
 LAYOUT_NAME = "charybdis_5col_layout"
 OVERLAP_THRESHOLD = 0.5  # минимальное расстояние между центрами комбо (в key units)
-OFFSET_STEP = 0.6        # шаг смещения между перекрывающимися комбо
+SLIDE_STEP = 1.0         # шаг горизонтального смещения между перекрывающимися комбо
 
 def load_key_positions(info_path, layout_name):
     with open(info_path) as f:
@@ -57,7 +57,7 @@ def apply_offsets(yaml_path, combos, groups):
     for group in groups:
         n = len(group)
         for rank, idx in enumerate(group):
-            offset = round((rank - (n - 1) / 2) * OFFSET_STEP, 2)
+            offset = round((rank - (n - 1) / 2) * SLIDE_STEP, 2)
             combo_keys = combos[idx]["p"]
             offsets_map[tuple(combo_keys)] = offset
 
@@ -88,7 +88,7 @@ def apply_offsets(yaml_path, combos, groups):
         # После строки l: вставляем смещение
         if current_combo_keys and stripped.startswith("l:"):
             offset = offsets_map[current_combo_keys]
-            result.append(f"  o: {offset}\n")
+            result.append(f"  s: {offset}\n")
             current_combo_keys = None
 
     with open(yaml_path, "w") as f:
