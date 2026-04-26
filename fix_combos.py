@@ -9,7 +9,7 @@ import sys
 
 LAYOUT_NAME = "charybdis_5col_layout"
 OVERLAP_THRESHOLD = 0.5  # минимальное расстояние между центрами комбо (в key units)
-SLIDE_STEP = 0.75        # шаг горизонтального смещения между перекрывающимися комбо
+SLIDE_STEP = 0.55        # шаг горизонтального смещения между перекрывающимися комбо
 
 def load_key_positions(info_path, layout_name):
     with open(info_path) as f:
