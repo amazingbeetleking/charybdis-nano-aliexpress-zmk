@@ -102,7 +102,7 @@
     scroll_alt_tab: scroll_alt_tab {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&scroll_ctrl_tab>, <&kp RA(LS(TAB))>;
+      bindings = <&scroll_ctrl_tab>, <&kp LS(TAB)>;
       mods = <(MOD_LALT|MOD_RALT)>;
     };
   };
