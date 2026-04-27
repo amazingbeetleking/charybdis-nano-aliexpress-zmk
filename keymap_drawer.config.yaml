@@ -40,7 +40,7 @@ draw_config:
     text.shifted { text-anchor: middle; dominant-baseline: hanging; }
     text.combo.hold, text.combo.shifted { font-size: 8px; }
     text.trans { fill: #2C3A40; }
-    path.combo { stroke-width: 1; stroke: gray; fill: none; }
+    path.combo { stroke-width: 2; stroke:#A65437; fill: none; }
     .icon-tabler > path { fill: inherit; stroke: inherit; stroke-width: 2; }
     .icon-tabler > path[stroke="none"][fill="none"] { visibility: hidden; }
   glyph_tap_size: 14
