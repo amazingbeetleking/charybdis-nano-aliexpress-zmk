@@ -1,5 +1,43 @@
+name: Build and Draw
 on: [push, pull_request, workflow_dispatch]
 
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+
+  draw:
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install keymap-drawer
+        run: pip install keymap-drawer
+
+      - name: Parse keymap
+        run: |
+          keymap -c keymap_drawer.config.yaml parse -z config/charybdis.keymap \
+            > keymap-drawer/charybdis.yaml
+
+      - name: Fix overlapping combos
+        run: python3 fix_combos.py config/info.json keymap-drawer/charybdis.yaml charybdis_5col_layout
+
+      - name: Draw SVG
+        run: |
+          keymap -c keymap_drawer.config.yaml draw \
+            keymap-drawer/charybdis.yaml \
+            -j config/info.json -l charybdis_5col_layout \
+            > keymap-drawer/charybdis.svg
+
+      - name: Commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add keymap-drawer/
+          git diff --cached --quiet || git commit -m "keymap-drawer: update SVG"
+          git push
