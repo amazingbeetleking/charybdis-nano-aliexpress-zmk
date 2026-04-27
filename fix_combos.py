@@ -9,7 +9,12 @@ import sys
 
 LAYOUT_NAME = "charybdis_5col_layout"
 OVERLAP_THRESHOLD = 0.5  # минимальное расстояние между центрами комбо (в key units)
-SLIDE_STEP = 0.55        # шаг горизонтального смещения между перекрывающимися комбо
+SLIDE_STEP = 0.5        # шаг горизонтального смещения между перекрывающимися комбо
+
+# Замены меток комбо, которые не помещаются в маленький бокс
+LABEL_REPLACEMENTS = {
+    "Gui+$$mdi:keyboard-space$$": "Gui+Space",
+}
 
 def load_key_positions(info_path, layout_name):
     with open(info_path) as f:
@@ -69,7 +74,21 @@ def apply_offsets(yaml_path, combos, groups):
 
     result = []
     current_combo_keys = None
+    in_combos = False
     for line in lines:
+        stripped = line.strip()
+
+        # Отслеживаем секцию combos
+        if stripped == "combos:":
+            in_combos = True
+        elif not stripped.startswith("-") and not stripped.startswith(" ") and stripped and in_combos:
+            in_combos = False
+
+        # Замена меток комбо
+        if in_combos and stripped.startswith("k:"):
+            for old, new in LABEL_REPLACEMENTS.items():
+                line = line.replace(old, new)
+
         result.append(line)
         stripped = line.strip()
 
@@ -94,6 +113,21 @@ def apply_offsets(yaml_path, combos, groups):
     with open(yaml_path, "w") as f:
         f.writelines(result)
 
+def fix_combo_labels(yaml_path):
+    """Заменяет иконки в метках комбо на текст, чтобы помещались в маленький бокс."""
+    replacements = {
+        "Gui+$$mdi:keyboard-space$$": "Gui+Space",
+    }
+
+    with open(yaml_path) as f:
+        content = f.read()
+
+    for old, new in replacements.items():
+        content = content.replace(old, new)
+
+    with open(yaml_path, "w") as f:
+        f.write(content)
+
 def main():
     info_path = sys.argv[1] if len(sys.argv) > 1 else "config/info.json"
     yaml_path = sys.argv[2] if len(sys.argv) > 2 else "keymap-drawer/charybdis.yaml"
@@ -116,6 +150,9 @@ def main():
             print(f"  Fixed overlap: {keys_list}")
     else:
         print("  No overlapping combos found")
+
+    fix_combo_labels(yaml_path)
+    print("  Fixed combo labels")
 
 if __name__ == "__main__":
     main()
