@@ -63,7 +63,7 @@ layers:
   - '3'
   - KP DIVIDE
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&alt_comma'
   - '['
   - ']'
   - {t: ▽, type: trans}
@@ -80,8 +80,8 @@ layers:
   - ']'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&alt_lbkt'
+  - '&alt_rbkt'
   - ''
   - '['
   - $
@@ -100,8 +100,8 @@ layers:
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&alt_lbrc'
+  - '&alt_rbrc'
   - {t: ▽, type: trans}
   - (
   - )
