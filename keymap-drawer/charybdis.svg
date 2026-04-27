@@ -737,12 +737,6 @@ path.combo { stroke-width: 1; stroke:#A65437; fill: none; }
 <rect rx="6" ry="6" x="602" y="130" width="28" height="26" class="combo"/>
 <use href="#mdi:arrow-up-bold" xlink:href="#mdi:arrow-up-bold" x="609" y="136" height="14" width="14.0" class="combo tap glyph mdi:arrow-up-bold"/>
 </g>
-<g class="combo combopos-2">
-<path d="M588,42 l-93,-6" class="combo"/>
-<path d="M588,42 l93,6" class="combo"/>
-<rect rx="6" ry="6" x="574" y="29" width="28" height="26" class="combo"/>
-<text x="588" y="42" class="combo tap"><tspan style="font-size: 78%">&amp;soft_off</tspan></text>
-</g>
 </g>
 </g>
 <g transform="translate(30, 1317)" class="layer-Function">
