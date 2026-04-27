@@ -292,11 +292,7 @@ alt_rbrc: alt_rbrc {
       bindings = <&kp DEL>;
       layers = <BASE SCR>;
     };
-     combo_soft_off {
-      key-positions = <5 9>;
-      bindings = <&soft_off>;
-      layers = <NAVI>;
-    };
+
   };
 
   keymap {
