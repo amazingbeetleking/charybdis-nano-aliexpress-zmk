@@ -98,6 +98,13 @@
       bindings = <&mo_tog SCR SCR>, <&kp RC(LS(TAB))>;
       mods = <(MOD_LCTL|MOD_RCTL)>;
     };
+
+    scroll_alt_tab: scroll_alt_tab {
+      compatible = "zmk,behavior-mod-morph";
+      #binding-cells = <0>;
+      bindings = <&mo_tog SCR SCR>, <&kp RA(LS(TAB))>;
+      mods = <(MOD_LALT|MOD_RALT)>;
+    };
   };
 
   macros {
