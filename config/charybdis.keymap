@@ -102,7 +102,7 @@
     scroll_alt_tab: scroll_alt_tab {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&mo_tog SCR SCR>, <&kp RA(LS(TAB))>;
+      bindings = <&scroll_ctrl_tab>, <&kp RA(LS(TAB))>;
       mods = <(MOD_LALT|MOD_RALT)>;
     };
   };
@@ -328,7 +328,7 @@ alt_rbrc: alt_rbrc {
     &lt POI Z     &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &lt POI FSLH
 // ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
 //                              ╭─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────╮
-                          &scroll_ctrl_tab  &lt NAVI SPACE &lt FUNC TAB     &lt SYMB ENTER &lt NUMB BSPC
+                            &scroll_alt_tab    &lt NAVI SPACE &lt FUNC TAB     &lt SYMB ENTER &lt NUMB BSPC
 //                              ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────╯
       >;
     };
