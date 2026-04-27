@@ -324,3 +324,6 @@ combos:
 - p: [23, 24]
   k: $$mdi:backspace-reverse-outline$$
   l: [Base, Scroll]
+- p: [5, 9]
+  k: '&soft_off'
+  l: [Navigation]
