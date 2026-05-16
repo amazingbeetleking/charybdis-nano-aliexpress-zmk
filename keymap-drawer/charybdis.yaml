@@ -42,7 +42,7 @@ layers:
   - '8'
   - '9'
   - ']'
-  - {t: ▽, type: trans}
+  - '&alt_laquo'
   - '&alt_semi'
   - '['
   - ']'
@@ -62,7 +62,7 @@ layers:
   - '2'
   - '3'
   - KP DIVIDE
-  - {t: ▽, type: trans}
+  - '&alt_raquo'
   - '&alt_comma'
   - '['
   - ']'
@@ -109,11 +109,11 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   Navigation:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''''
+  - '&alt_quote'
+  - ''
   - ''
   - ''
   - ''
@@ -123,32 +123,32 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
+  - ''
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-right-bold$$
   - $$mdi:keyboard-esc$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - '"'
+  - ''
+  - ''
   - HOME
   - PG DN
   - PG UP
   - END
   - APP
-  - {t: ▽, type: trans}
+  - ''
   - {type: held}
-  - {t: ▽, type: trans}
+  - ''
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:backspace-reverse-outline$$
   Function:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
   - ''
   - PSCRN
   - F7
@@ -159,17 +159,17 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
+  - ''
   - INS
   - F4
   - F5
   - F6
   - F11
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - KP NUM
   - F1
   - F2
@@ -181,21 +181,21 @@ layers:
   - Ctl+KP MINUS
   - '|'
   Pointer:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
+  - ''
   - $$mdi:volume-high$$
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
@@ -205,12 +205,12 @@ layers:
   - Ctl+X
   - Ctl+C
   - Ctl+V
-  - {t: ▽, type: trans}
+  - ''
   - $$mdi:volume-low$$
   - $$mdi:play-pause$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
   - Sniper
   - '&mkp LCLK'
   - '&mkp RCLK'
