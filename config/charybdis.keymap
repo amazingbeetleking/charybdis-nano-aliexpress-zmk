@@ -105,24 +105,6 @@
       bindings = <&scroll_ctrl_tab>, <&kp LS(TAB)>;
       mods = <(MOD_LALT|MOD_RALT)>;
     };
-
-    // Mod‑tap: удержание — LALT, тап — скобка [
-    mt_lalt_lbkt: mt_lalt_lbkt {
-        compatible = "zmk,behavior-hold-tap";
-        #binding-cells = <0>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <150>;
-        bindings = <&kp LALT>, <&alt_bracket_left>;
-    };
-
-    // Mod‑tap: удержание — RCTRL, тап — скобка ]
-    mt_rctl_rbkt: mt_rctl_rbkt {
-        compatible = "zmk,behavior-hold-tap";
-        #binding-cells = <0>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <150>;
-        bindings = <&kp RCTRL>, <&alt_bracket_right>;
-    };
   };
 
   macros {
@@ -365,6 +347,25 @@ alt_bracket_right: alt_bracket_right {
         ;
 };
   };
+    behaviors {
+        // Mod‑tap: удержание — LALT, тап — скобка [
+        mt_lalt_lbkt: mt_lalt_lbkt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <0>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&kp LALT &alt_bracket_left>;
+        };
+
+        // Mod‑tap: удержание — RCTRL, тап — скобка ]
+        mt_rctl_rbkt: mt_rctl_rbkt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <0>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <150>;
+            bindings = <&kp RCTRL &alt_bracket_right>;
+        };
+    };
 
    combos {
     compatible = "zmk,combos";
