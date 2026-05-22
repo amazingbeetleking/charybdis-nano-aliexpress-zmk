@@ -42,7 +42,7 @@ layers:
   - '8'
   - '9'
   - ']'
-  - '&alt_laquo'
+  - '&alt_less'
   - '&alt_semi'
   - '['
   - ']'
@@ -62,7 +62,7 @@ layers:
   - '2'
   - '3'
   - KP DIVIDE
-  - '&alt_raquo'
+  - '&alt_greater'
   - '&alt_comma'
   - '['
   - ']'
@@ -112,7 +112,7 @@ layers:
   - ''
   - ''
   - ''''
-  - '&alt_quote'
+  - '&alt_question'
   - ''
   - ''
   - ''
@@ -120,10 +120,10 @@ layers:
   - ''
   - ''
   - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
+  - {t: alt bracket left, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: alt bracket right, h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:apple-keyboard-shift$$
-  - ''
+  - '&alt_doublequote'
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
@@ -132,7 +132,7 @@ layers:
   - ''
   - ''
   - '"'
-  - ''
+  - '&alt_exclamation'
   - ''
   - HOME
   - PG DN

@@ -322,7 +322,7 @@ path.combo { stroke-width: 1; stroke:#A65437; fill: none; }
 </g>
 <g transform="translate(476, 35)" class="key keypos-5">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 70%">&amp;alt_laquo</tspan></text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 78%">&amp;alt_less</tspan></text>
 </g>
 <g transform="translate(532, 35)" class="key keypos-6">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -406,7 +406,7 @@ path.combo { stroke-width: 1; stroke:#A65437; fill: none; }
 </g>
 <g transform="translate(476, 147)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 70%">&amp;alt_raquo</tspan></text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;alt_great…</tspan></text>
 </g>
 <g transform="translate(532, 147)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -603,7 +603,7 @@ path.combo { stroke-width: 1; stroke:#A65437; fill: none; }
 </g>
 <g transform="translate(196, 35)" class="key keypos-3">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 70%">&amp;alt_quote</tspan></text>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;alt_quest…</tspan></text>
 </g>
 <g transform="translate(252, 35)" class="key keypos-4">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -629,11 +629,17 @@ path.combo { stroke-width: 1; stroke:#A65437; fill: none; }
 </g>
 <g transform="translate(84, 91)" class="key keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:apple-keyboard-option"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">alt</tspan><tspan x="0" dy="1.2em">bracket</tspan><tspan x="0" dy="1.2em">left</tspan>
+</text>
+<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:apple-keyboard-option"/>
 </g>
 <g transform="translate(140, 84)" class="key keypos-12">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:apple-keyboard-control"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">alt</tspan><tspan x="0" dy="1.2em">bracket</tspan><tspan x="0" dy="1.2em">right</tspan>
+</text>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-6" y="12" height="12" width="12.0" class="key hold glyph mdi:apple-keyboard-control"/>
 </g>
 <g transform="translate(196, 91)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -641,6 +647,7 @@ path.combo { stroke-width: 1; stroke:#A65437; fill: none; }
 </g>
 <g transform="translate(252, 91)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;alt_doubl…</tspan></text>
 </g>
 <g transform="translate(476, 91)" class="key keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -674,6 +681,7 @@ path.combo { stroke-width: 1; stroke:#A65437; fill: none; }
 </g>
 <g transform="translate(196, 147)" class="key keypos-23">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;alt_excla…</tspan></text>
 </g>
 <g transform="translate(252, 147)" class="key keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
