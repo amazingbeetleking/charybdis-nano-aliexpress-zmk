@@ -120,8 +120,8 @@ layers:
   - ''
   - ''
   - $$mdi:apple-keyboard-command$$
-  - '&mt_lalt_lbkt'
-  - '&mt_rctl_rbkt'
+  - {t: '&alt_bracket_left', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '&alt_bracket_right', h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:apple-keyboard-shift$$
   - '&alt_doublequote'
   - $$mdi:arrow-left-bold$$
