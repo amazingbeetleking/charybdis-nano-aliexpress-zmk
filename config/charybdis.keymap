@@ -274,8 +274,7 @@ alt_bracket_right: alt_bracket_right {
 };
   };
 
-/ {
-  behaviors {
+ behaviors {
     blt: blt {
       compatible = "zmk,behavior-hold-tap";
       #binding-cells = <2>;
