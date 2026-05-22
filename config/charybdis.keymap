@@ -489,7 +489,7 @@ alt_bracket_right: alt_bracket_right {
 
     navigation_layer {
       label = "NAVI";
-      display-name = "Navigation";alt_bracket_left
+      display-name = "Navigation";
       bindings = <
 // ╭─────────────┬───────────────────────────┬─────────────────────────────┬─────────────────┬──────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &none        &none                       &kp APOS                      &alt_question     &none               &none         &none         &none         &none         &none
