@@ -118,7 +118,6 @@
             #binding-cells = <0>;
             bindings = <&kp RCTRL>, <&alt_bracket_right>;
         };
-    };
   };
 
   macros {
