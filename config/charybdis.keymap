@@ -32,7 +32,7 @@
 #define SCR  6
 #define SNI  7
 
-
+/ {
   macros {
     ctrl_cmd_hold: ctrl_cmd_hold {
       compatible = "zmk,behavior-macro";
