@@ -226,6 +226,7 @@ alt_rbrc: alt_rbrc {
         , <&macro_release &kp LALT>
         ;
 };
+
 alt_quote: alt_quote {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
@@ -237,6 +238,7 @@ alt_quote: alt_quote {
         , <&macro_release &kp LALT>
         ;
 };
+
 alt_laquo: alt_laquo {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
@@ -248,6 +250,7 @@ alt_laquo: alt_laquo {
         , <&macro_release &kp LALT>
         ;
 };
+
 alt_raquo: alt_raquo {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
@@ -256,6 +259,90 @@ alt_raquo: alt_raquo {
     bindings
         = <&macro_press &kp LALT>
         , <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N8 &kp KP_N7>
+        , <&macro_release &kp LALT>
+        ;
+};
+
+alt_question: alt_question {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <30>;
+    tap-ms = <10>;
+    bindings
+        = <&macro_press &kp LALT>
+        , <&macro_tap &kp KP_N0 &kp KP_N0 &kp KP_N6 &kp KP_N3>
+        , <&macro_release &kp LALT>
+        ;
+};
+
+alt_exclamation: alt_exclamation {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <30>;
+    tap-ms = <10>;
+    bindings
+        = <&macro_press &kp LALT>
+        , <&macro_tap &kp KP_N0 &kp KP_N0 &kp KP_N3 &kp KP_N3>
+        , <&macro_release &kp LALT>
+        ;
+};
+
+alt_doublequote: alt_doublequote {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <30>;
+    tap-ms = <10>;
+    bindings
+        = <&macro_press &kp LALT>
+        , <&macro_tap &kp KP_N0 &kp KP_N0 &kp KP_N3 &kp KP_N4>
+        , <&macro_release &kp LALT>
+        ;
+};
+
+alt_less: alt_less {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <30>;
+    tap-ms = <10>;
+    bindings
+        = <&macro_press &kp LALT>
+        , <&macro_tap &kp KP_N0 &kp KP_N0 &kp KP_N6 &kp KP_N0>
+        , <&macro_release &kp LALT>
+        ;
+};
+
+alt_greater: alt_greater {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <30>;
+    tap-ms = <10>;
+    bindings
+        = <&macro_press &kp LALT>
+        , <&macro_tap &kp KP_N0 &kp KP_N0 &kp KP_N6 &kp KP_N2>
+        , <&macro_release &kp LALT>
+        ;
+};
+
+alt_bracket_left: alt_bracket_left {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <30>;
+    tap-ms = <10>;
+    bindings
+        = <&macro_press &kp LALT>
+        , <&macro_tap &kp KP_N0 &kp KP_N0 &kp KP_N9 &kp KP_N1>
+        , <&macro_release &kp LALT>
+        ;
+};
+
+alt_bracket_right: alt_bracket_right {
+    compatible = "zmk,behavior-macro";
+    #binding-cells = <0>;
+    wait-ms = <30>;
+    tap-ms = <10>;
+    bindings
+        = <&macro_press &kp LALT>
+        , <&macro_tap &kp KP_N0 &kp KP_N0 &kp KP_N9 &kp KP_N3>
         , <&macro_release &kp LALT>
         ;
 };
@@ -371,11 +458,11 @@ alt_raquo: alt_raquo {
       display-name = "Number";
       bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &kp GRAVE     &kp N7        &kp N8        &kp N9        &kp RBKT          &alt_laquo    &alt_semi     &kp LBKT      &kp RBKT      &trans
+    &kp GRAVE     &kp N7        &kp N8        &kp N9        &kp RBKT          &alt_less     &alt_semi     &kp LBKT      &kp RBKT      &trans
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp LBKT      &kp N4        &kp N5        &kp N6        &kp EQUAL         &alt_colon    &kp RSHFT    &mt LCTRL LPAR &mt LALT RPAR &kp RGUI
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp APOS      &kp N1        &kp N2        &kp N3        &kp KP_DIVIDE     &alt_raquo     &alt_comma     &kp LBRC      &kp RBRC      &trans
+    &kp APOS      &kp N1        &kp N2        &kp N3        &kp KP_DIVIDE     &alt_greater  &alt_comma     &kp LBRC      &kp RBRC      &trans
 // ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
 //                              ╭─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────╮
                                  &alt_dot      &kp N0        &kp MINUS         &trans        &trans
@@ -402,18 +489,18 @@ alt_raquo: alt_raquo {
 
     navigation_layer {
       label = "NAVI";
-      display-name = "Navigation";
+      display-name = "Navigation";alt_bracket_left
       bindings = <
-// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-     &none        &none         &kp APOS      &alt_quote     &none            &none         &none         &none         &none         &none
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT      &none             &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp ESC
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &none         &none        &kp DQT        &none         &none            &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       &kp K_APP
-// ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
-//                              ╭─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────╮
-                                  &none         &none         &none             &kp ENTER     &kp DEL
-//                              ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+// ╭─────────────┬───────────────────────────┬─────────────────────────────┬─────────────────┬──────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &none        &none                       &kp APOS                      &alt_question     &none               &none         &none         &none         &none         &none
+// ├─────────────┼───────────────────────────┼─────────────────────────────┼─────────────────┼──────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    &kp LGUI      &mt LALT alt_bracket_left  &mt RCTRL alt_bracket_right    &kp LSHFT         &alt_doublequote   &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp ESC
+// ├─────────────┼───────────────────────────┼─────────────────────────────┼─────────────────┼──────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &none        &none                       &kp DQT                       &alt_exclamation  &none               &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       &kp K_APP
+// ╰─────────────┴───────────────────────────┴─────────────────────────────┴─────────────────┴──────────────╯   ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
+//                                                                ╭─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────╮
+                                                                    &none         &none         &none             &kp ENTER     &kp DEL
+//                                                                ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────╯
       >;
     };
 
