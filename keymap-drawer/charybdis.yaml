@@ -111,8 +111,8 @@ layers:
   Navigation:
   - ''
   - ''
-  - ''''
-  - '&alt_question'
+  - ''
+  - ''
   - ''
   - ''
   - ''
@@ -123,7 +123,7 @@ layers:
   - {t: '&alt_bracket_left', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '&alt_bracket_right', h: '$$mdi:apple-keyboard-control$$'}
   - $$mdi:apple-keyboard-shift$$
-  - '&alt_doublequote'
+  - ''
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-up-bold$$
@@ -131,8 +131,8 @@ layers:
   - $$mdi:keyboard-esc$$
   - ''
   - ''
-  - '"'
-  - '&alt_exclamation'
+  - ''
+  - ''
   - ''
   - HOME
   - PG DN
@@ -314,6 +314,7 @@ combos:
 - p: [27, 28]
   k: Alt+$$mdi:arrow-up-bold$$
   l: [Navigation]
+  s: 0.25
 - p: [13, 16]
   k: Gui+Space
   l: [Base, Scroll]
@@ -324,3 +325,13 @@ combos:
 - p: [23, 24]
   k: $$mdi:backspace-reverse-outline$$
   l: [Base, Scroll]
+- p: [16, 17]
+  k: '&alt_question'
+  l: [Base, Scroll]
+- p: [12, 13]
+  k: '&alt_exclamation'
+  l: [Base, Scroll]
+- p: [27, 28]
+  k: '&alt_doublequote'
+  l: [Base, Scroll]
+  s: 0.25
