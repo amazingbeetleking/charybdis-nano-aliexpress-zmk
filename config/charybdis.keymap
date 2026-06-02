@@ -272,6 +272,37 @@ alt_bracket_right: alt_bracket_right {
         , <&macro_release &kp LALT>
         ;
 };
+    apostrophe: apostrophe {
+     compatible = "zmk,behavior-macro";
+     #binding-cells = <0>;
+     wait-ms = <30>;
+     tap-ms = <10>;
+     bindings
+         = <&macro_press &kp LALT>
+         , <&macro_tap &kp KP_N3 &kp KP_N9>
+         , <&macro_release &kp LALT>
+         ;
+ };
+
+        // 2. Слово "clc"
+   clc_word: clc_word {
+     compatible = "zmk,behavior-macro";
+     #binding-cells = <0>;
+            // При необходимости можно добавить wait-ms/tap-ms,
+            // но для простого ввода текста обычно не требуется.
+      bindings
+          = <&macro_tap &kp C &kp L &kp C>
+         ;
+  };
+
+        // 3. Слово "clear"
+     clear_word: clear_word {
+       compatible = "zmk,behavior-macro";
+       #binding-cells = <0>;
+       bindings
+         = <&macro_tap &kp C &kp L &kp E &kp A &kp R>
+         ;
+     };
   };
 
  behaviors {
