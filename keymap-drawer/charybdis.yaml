@@ -335,3 +335,12 @@ combos:
   k: '&alt_doublequote'
   l: [Base, Scroll]
   s: 0.25
+- p: [1, 2]
+  k: '&apostrophe'
+  l: [Base, Scroll]
+- p: [13, 14]
+  k: '&clc_word'
+  l: [Base, Scroll]
+- p: [15, 16]
+  k: '&clear_word'
+  l: [Base, Scroll]
