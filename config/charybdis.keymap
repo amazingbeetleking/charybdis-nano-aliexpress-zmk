@@ -489,6 +489,23 @@ mt_rctl_rbkt: mt_rctl_rbkt {
       layers = <BASE SCR>;
     };
 
+    combo_apostrophe {
+      key-positions = <1 2>;
+      bindings = <&apostrophe>;
+      layers = <BASE SCR>;
+    };
+
+    combo_clc_word {
+      key-positions = <13 14>;
+      bindings = <&clc_word>;
+      layers = <BASE SCR>;
+    };
+
+    combo_clear_word {
+      key-positions = <15 16>;
+      bindings = <&clear_word>;
+      layers = <BASE SCR>;
+    };
 
   };
 
