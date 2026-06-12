@@ -472,13 +472,13 @@ mt_rctl_rbkt: mt_rctl_rbkt {
     };
 
     combo_alt_question {
-      key-positions = <16 17>;
+      key-positions = <3 6>;
       bindings = <&alt_question>;
       layers = <BASE SCR>;
     };
 
     combo_alt_exclamation {
-      key-positions = <12 13>;
+      key-positions = <23 26>;
       bindings = <&alt_exclamation>;
       layers = <BASE SCR>;
     };
