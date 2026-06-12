@@ -325,10 +325,10 @@ combos:
 - p: [23, 24]
   k: $$mdi:backspace-reverse-outline$$
   l: [Base, Scroll]
-- p: [16, 17]
+- p: [3, 6]
   k: '&alt_question'
   l: [Base, Scroll]
-- p: [12, 13]
+- p: [23, 26]
   k: '&alt_exclamation'
   l: [Base, Scroll]
 - p: [27, 28]
