@@ -214,8 +214,8 @@ layers:
   - Sniper
   - '&mkp LCLK'
   - '&mkp RCLK'
-  - '&mkp MCLK'
-  - '&mkp LCLK'
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_UP'
   Scroll:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
