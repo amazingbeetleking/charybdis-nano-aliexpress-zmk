@@ -31,7 +31,7 @@ layers:
   - ','
   - .
   - {t: /, h: Pointer}
-  - {t: Scroll, h: Scroll, s: 'Sft+$$mdi:keyboard-tab$$'}
+  - {t: Scroll, h: Scroll, s: LALT(LS(TAB))}
   - {t: '$$mdi:keyboard-space$$', h: Navigation}
   - {t: '$$mdi:keyboard-tab$$', h: Function}
   - {t: '$$mdi:keyboard-return$$', h: Symbol}
