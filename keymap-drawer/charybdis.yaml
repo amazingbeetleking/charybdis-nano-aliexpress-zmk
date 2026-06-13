@@ -31,7 +31,7 @@ layers:
   - ','
   - .
   - {t: /, h: Pointer}
-  - {t: Scroll, h: Scroll, s: 'Sft+$$mdi:keyboard-tab$$'}
+  - '&scroll_ctrl_alt_tab'
   - {t: '$$mdi:keyboard-space$$', h: Navigation}
   - {t: '$$mdi:keyboard-tab$$', h: Function}
   - {t: '$$mdi:keyboard-return$$', h: Symbol}
@@ -247,7 +247,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
