@@ -536,7 +536,7 @@ mt_rctl_rbkt: mt_rctl_rbkt {
     &lt POI Z     &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &lt POI FSLH
 // ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
 //                              ╭─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────╮
-                            &scroll_alt_tab    &lt NAVI SPACE &lt FUNC TAB     &lt SYMB ENTER &lt NUMB BSPC
+                              &scroll_ctrl_alt_tab  &lt NAVI SPACE &lt FUNC TAB     &lt SYMB ENTER &lt NUMB BSPC
 //                              ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────╯
       >;
     };
