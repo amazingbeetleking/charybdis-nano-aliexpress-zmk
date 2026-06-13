@@ -374,9 +374,8 @@ alt_bracket_right: alt_bracket_right {
     scroll_alt_tab: scroll_alt_tab {
       compatible = "zmk,behavior-mod-morph";
       #binding-cells = <0>;
-      bindings = <&scroll_ctrl_tab>, <&kp LS(TAB)>;
+      bindings = <&mo_tog SCR SCR>, <&kp LALT(LS(TAB))>;
       mods = <(MOD_LALT|MOD_RALT)>;
-      keep-mods = <(MOD_LALT|MOD_RALT)>;
     };
 
 // Mod-tap: удержание — LALT, тап — скобка [
