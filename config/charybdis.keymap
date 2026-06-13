@@ -364,19 +364,20 @@ alt_bracket_right: alt_bracket_right {
       bindings = <&mo>, <&tog>;
     };
 
-    scroll_ctrl_tab: scroll_ctrl_tab {
-      compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
-      bindings = <&mo_tog SCR SCR>, <&kp RC(LS(TAB))>;
-      mods = <(MOD_LCTL|MOD_RCTL)>;
-    };
+scroll_alt_tab: scroll_alt_tab {
+  compatible = "zmk,behavior-mod-morph";
+  #binding-cells = <0>;
+  bindings = <&mo_tog SCR SCR>, <&kp LS(TAB)>;
+  mods = <(MOD_LALT|MOD_RALT)>;
+  keep-mods = <(MOD_LALT|MOD_RALT)>;
+};
 
-    scroll_alt_tab: scroll_alt_tab {
-      compatible = "zmk,behavior-mod-morph";
-      #binding-cells = <0>;
-      bindings = <&mo_tog SCR SCR>, <&kp LALT(LS(TAB))>;
-      mods = <(MOD_LALT|MOD_RALT)>;
-    };
+scroll_ctrl_tab: scroll_ctrl_tab {
+  compatible = "zmk,behavior-mod-morph";
+  #binding-cells = <0>;
+  bindings = <&scroll_alt_tab>, <&kp LS(TAB)>;
+  mods = <(MOD_LCTL|MOD_RCTL)>;
+};
 
 // Mod-tap: удержание — LALT, тап — скобка [
 mt_lalt_lbkt: mt_lalt_lbkt {
