@@ -364,19 +364,12 @@ alt_bracket_right: alt_bracket_right {
       bindings = <&mo>, <&tog>;
     };
 
-scroll_alt_tab: scroll_alt_tab {
+ scroll_ctrl_alt_tab: scroll_ctrl_alt_tab {
   compatible = "zmk,behavior-mod-morph";
   #binding-cells = <0>;
   bindings = <&mo_tog SCR SCR>, <&kp LS(TAB)>;
-  mods = <(MOD_LALT|MOD_RALT)>;
-  keep-mods = <(MOD_LALT|MOD_RALT)>;
-};
-
-scroll_ctrl_tab: scroll_ctrl_tab {
-  compatible = "zmk,behavior-mod-morph";
-  #binding-cells = <0>;
-  bindings = <&scroll_alt_tab>, <&kp LS(TAB)>;
-  mods = <(MOD_LCTL|MOD_RCTL)>;
+  mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
+  keep-mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
 };
 
 // Mod-tap: удержание — LALT, тап — скобка [
@@ -397,8 +390,8 @@ mt_rctl_rbkt: mt_rctl_rbkt {
     tapping-term-ms = <150>;
     quick-tap-ms = <175>;
     bindings = <&kp>, <&alt_bracket_right>;
-};
-  };
+   };
+ };
    
    combos {
     compatible = "zmk,combos";
@@ -536,7 +529,7 @@ mt_rctl_rbkt: mt_rctl_rbkt {
     &lt POI Z     &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &lt POI FSLH
 // ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
 //                              ╭─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────╮
-                              &scroll_ctrl_alt_tab  &lt NAVI SPACE &lt FUNC TAB     &lt SYMB ENTER &lt NUMB BSPC
+                           &scroll_ctrl_alt_tab &lt NAVI SPACE &lt FUNC TAB     &lt SYMB ENTER &lt NUMB BSPC
 //                              ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────╯
       >;
     };
@@ -621,7 +614,7 @@ mt_rctl_rbkt: mt_rctl_rbkt {
     &none        &kp LC(X)     &kp LC(C)     &kp LC(V)     &none             &kp C_VOL_DN  &kp C_PP       &none         &none         &none
 // ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
 //                              ╭─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────╮
-                                 &mo SNI       &mkp LCLK     &mkp RCLK        &msc SCRL_DOWN &msc SCRL_UP
+                                 &mo SNI       &mkp LCLK     &mkp RCLK         &msc SCRL_DOWN &msc SCRL_UP
 //                              ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────╯
       >;
     };
