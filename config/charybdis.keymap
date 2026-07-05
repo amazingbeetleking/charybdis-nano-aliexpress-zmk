@@ -396,8 +396,9 @@ mt_rctl_rbkt: mt_rctl_rbkt {
      excl_shift: excl_shift {
      compatible = "zmk,behavior-hold-tap";
      #binding-cells = <2>;
-     flavor = "tap-preferred";
-     tapping-term-ms = <200>;
+     flavor = "tap-preferred";    // или "balanced"
+     tapping-term-ms = <100>;     // меньше задержка
+     quick-tap-ms = <100>;        // мгновенно при повторах
      bindings = <&kp>, <&alt_exclamation>;
    };
 
@@ -405,8 +406,9 @@ mt_rctl_rbkt: mt_rctl_rbkt {
      quest_shift: quest_shift {
      compatible = "zmk,behavior-hold-tap";
      #binding-cells = <2>;
-     flavor = "tap-preferred";
-     tapping-term-ms = <200>;
+     flavor = "tap-preferred";    // или "balanced"
+     tapping-term-ms = <100>;     // меньше задержка
+     quick-tap-ms = <100>;        // мгновенно при повторах
      bindings = <&kp>, <&alt_question>;
    };
 
