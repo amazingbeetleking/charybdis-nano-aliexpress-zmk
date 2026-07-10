@@ -470,6 +470,7 @@ mt_rctl_rbkt: mt_rctl_rbkt {
 
     combo_luanguage {
       key-positions = <13 16>;
+      key-positions = <31 34>;
       bindings = <&kp LG(SPACE)>;
       layers =<BASE SCR>;
     };
