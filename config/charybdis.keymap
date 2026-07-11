@@ -201,18 +201,6 @@ alt_question: alt_question {
         ;
 };
 
-alt_exclamation: alt_exclamation {
-    compatible = "zmk,behavior-macro";
-    #binding-cells = <0>;
-    wait-ms = <30>;
-    tap-ms = <10>;
-    bindings
-        = <&macro_press &kp LALT>
-        , <&macro_tap &kp KP_N0 &kp KP_N0 &kp KP_N3 &kp KP_N3>
-        , <&macro_release &kp LALT>
-        ;
-};
-
 alt_doublequote: alt_doublequote {
     compatible = "zmk,behavior-macro";
     #binding-cells = <0>;
@@ -392,23 +380,13 @@ mt_rctl_rbkt: mt_rctl_rbkt {
     bindings = <&kp>, <&alt_bracket_right>;
 };
 
-// краткое нажатие - восклицательный знак, долгое нажатие - shift
-     excl_shift: excl_shift {
-     compatible = "zmk,behavior-hold-tap";
-     #binding-cells = <2>;
-     flavor = "tap-preferred";    // или "balanced"
-     tapping-term-ms = <100>;     // меньше задержка
-     quick-tap-ms = <100>;        // мгновенно при повторах
-     bindings = <&kp>, <&alt_exclamation>;
-   };
-
 // краткое нажатие - вопросительный знак, долгое нажатие - shift
      quest_shift: quest_shift {
      compatible = "zmk,behavior-hold-tap";
      #binding-cells = <2>;
      flavor = "tap-preferred";    // или "balanced"
-     tapping-term-ms = <100>;     // меньше задержка
-     quick-tap-ms = <100>;        // мгновенно при повторах
+     tapping-term-ms = <150>;     // меньше задержка
+     quick-tap-ms = <175>;        // мгновенно при повторах
      bindings = <&kp>, <&alt_question>;
    };
 
@@ -468,8 +446,13 @@ mt_rctl_rbkt: mt_rctl_rbkt {
       layers = <NAVI>;
     };
 
-    combo_luanguage {
+    combo_luanguage1 {
       key-positions = <13 16>;
+      bindings = <&kp LG(SPACE)>;
+      layers =<BASE SCR>;
+    };
+
+    combo_luanguage2 {
       key-positions = <31 34>;
       bindings = <&kp LG(SPACE)>;
       layers =<BASE SCR>;
@@ -495,7 +478,7 @@ mt_rctl_rbkt: mt_rctl_rbkt {
 
     combo_alt_exclamation {
       key-positions = <23 26>;
-      bindings = <&alt_exclamation>;
+      bindings = <&kp EXCL>;
       layers = <BASE SCR>;
     };
 
@@ -597,7 +580,7 @@ mt_rctl_rbkt: mt_rctl_rbkt {
 // ╭─────────────┬───────────────────────────┬──────────────────────────┬───────────────────┬──────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
      &none        &none                       &none                      &none               &none               &none         &none         &none         &none         &none
 // ├─────────────┼───────────────────────────┼──────────────────────────┼───────────────────┼──────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp LGUI      &mt_lalt_lbkt LALT 0        &mt_rctl_rbkt RCTRL 0      &excl_shift LSHFT 0 &none               &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp ESC
+    &kp LGUI      &mt_lalt_lbkt LALT 0        &mt_rctl_rbkt RCTRL 0     &mt LSHIHT EXCL      &none               &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &kp ESC
 // ├─────────────┼───────────────────────────┼──────────────────────────┼───────────────────┼──────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
      &none        &none                       &none                      &none               &none              &kp HOME      &kp PG_DN     &kp PG_UP     &kp END       &kp K_APP
 // ╰─────────────┴───────────────────────────┴──────────────────────────┴───────────────────┴──────────────╯   ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
