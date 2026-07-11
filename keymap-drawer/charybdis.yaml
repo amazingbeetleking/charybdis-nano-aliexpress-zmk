@@ -122,7 +122,7 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - {t: '&alt_bracket_left', h: '$$mdi:apple-keyboard-option$$'}
   - {t: '&alt_bracket_right', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '&alt_exclamation', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '!', h: LSHIHT}
   - ''
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
@@ -298,6 +298,7 @@ combos:
 - p: [12, 17]
   k: $$mdi:apple-keyboard-caps$$
   l: [Base, Scroll]
+  s: -0.25
 - p: [7, 8]
   k: Gui+E
   l: [Base, Scroll]
@@ -314,6 +315,10 @@ combos:
   k: Alt+$$mdi:arrow-up-bold$$
   l: [Navigation]
   s: 0.25
+- p: [13, 16]
+  k: Gui+Space
+  l: [Base, Scroll]
+  s: 0.25
 - p: [31, 34]
   k: Gui+Space
   l: [Base, Scroll]
@@ -327,7 +332,7 @@ combos:
   k: '&alt_question'
   l: [Base, Scroll]
 - p: [23, 26]
-  k: '&alt_exclamation'
+  k: '!'
   l: [Base, Scroll]
 - p: [27, 28]
   k: '&alt_doublequote'
