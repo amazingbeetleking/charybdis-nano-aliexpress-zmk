@@ -250,7 +250,7 @@ layers:
   - {type: held}
   - ''
   - ''
-  - ''
+  - STOP
   - $$mdi:play-pause$$
   Sniper:
   - {t: ▽, type: trans}
@@ -297,17 +297,17 @@ combos:
   l: [Base]
 - p: [12, 17]
   k: $$mdi:apple-keyboard-caps$$
-  l: [Base, Scroll]
+  l: [Base]
   s: -0.25
 - p: [7, 8]
   k: Gui+E
-  l: [Base, Scroll]
+  l: [Base]
 - p: [20, 21]
   k: Alt+F4
-  l: [Base, Scroll]
+  l: [Base, Navigation]
 - p: [28, 29]
   k: Alt+F4
-  l: [Base, Scroll]
+  l: [Base, Navigation]
 - p: [17, 18]
   k: Alt+$$mdi:arrow-left-bold$$
   l: [Navigation]
@@ -317,33 +317,33 @@ combos:
   s: 0.25
 - p: [13, 16]
   k: Gui+Space
-  l: [Base, Scroll]
+  l: [Base]
   s: 0.25
 - p: [31, 34]
   k: Gui+Space
-  l: [Base, Scroll]
+  l: [Base]
 - p: [0, 4]
   k: '&studio_unlock'
   l: [Base]
 - p: [23, 24]
   k: $$mdi:backspace-reverse-outline$$
-  l: [Base, Scroll]
+  l: [Base]
 - p: [3, 6]
   k: '&alt_question'
-  l: [Base, Scroll]
+  l: [Base]
 - p: [23, 26]
   k: '!'
-  l: [Base, Scroll]
+  l: [Base]
 - p: [27, 28]
   k: '&alt_doublequote'
-  l: [Base, Scroll]
+  l: [Base]
   s: 0.25
 - p: [1, 2]
   k: '&apostrophe'
   l: [Base, Scroll]
 - p: [13, 14]
   k: '&clc_word'
-  l: [Base, Scroll]
+  l: [Base]
 - p: [15, 16]
   k: '&clear_word'
-  l: [Base, Scroll]
+  l: [Base]
