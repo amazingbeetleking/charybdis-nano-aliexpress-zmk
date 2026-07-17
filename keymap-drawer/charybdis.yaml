@@ -340,7 +340,7 @@ combos:
   s: 0.25
 - p: [1, 2]
   k: '&apostrophe'
-  l: [Base, Scroll]
+  l: [Base]
 - p: [13, 14]
   k: '&clc_word'
   l: [Base]
