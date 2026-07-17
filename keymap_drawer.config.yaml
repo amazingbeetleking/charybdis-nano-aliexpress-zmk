@@ -55,199 +55,82 @@ draw_config:
 parse_config:
   preprocess: true
 
+  # === Переопределяем названия модификаторов (чтобы было "Ctrl", не "Ctl") ===
+  mod_legend_map:
+    LCTRL: Ctrl
+    LSHIFT: Shift
+    LSHFT: Shift
+    LALT: Alt
+    LGUI: Cmd
+    RCTRL: Ctrl
+    RSHIFT: Shift
+    RSHFT: Shift
+    RALT: Alt
+    RGUI: Cmd
+
   # === Маппинг для комбинаций модификаторов + навигационные клавиши ===
   # Keymap-drawer не умеет автоматически склеивать модификатор + стрелку,
-  # поэтому перехватываем сырые биндинги до парсинга.
+  # поэтому перехватываем сырые биндинги и возвращаем простую строку.
+  # Строка отрисовывается горизонтально по центру клавиши.
   raw_binding_map:
     # Ctrl + стрелки
-    "&kp LC(DOWN)":
-      type: hold
-      hold: "Ctrl+"
-      tap: "↓"
-    "&kp LC(UP)":
-      type: hold
-      hold: "Ctrl+"
-      tap: "↑"
-    "&kp LC(LEFT)":
-      type: hold
-      hold: "Ctrl+"
-      tap: "←"
-    "&kp LC(RIGHT)":
-      type: hold
-      hold: "Ctrl+"
-      tap: "→"
+    "&kp LC(DOWN)": "Ctrl+↓"
+    "&kp LC(UP)": "Ctrl+↑"
+    "&kp LC(LEFT)": "Ctrl+←"
+    "&kp LC(RIGHT)": "Ctrl+→"
     # Shift + стрелки
-    "&kp LS(DOWN)":
-      type: hold
-      hold: "Shift+"
-      tap: "↓"
-    "&kp LS(UP)":
-      type: hold
-      hold: "Shift+"
-      tap: "↑"
-    "&kp LS(LEFT)":
-      type: hold
-      hold: "Shift+"
-      tap: "←"
-    "&kp LS(RIGHT)":
-      type: hold
-      hold: "Shift+"
-      tap: "→"
+    "&kp LS(DOWN)": "Shift+↓"
+    "&kp LS(UP)": "Shift+↑"
+    "&kp LS(LEFT)": "Shift+←"
+    "&kp LS(RIGHT)": "Shift+→"
     # Alt + стрелки
-    "&kp LA(DOWN)":
-      type: hold
-      hold: "Alt+"
-      tap: "↓"
-    "&kp LA(UP)":
-      type: hold
-      hold: "Alt+"
-      tap: "↑"
-    "&kp LA(LEFT)":
-      type: hold
-      hold: "Alt+"
-      tap: "←"
-    "&kp LA(RIGHT)":
-      type: hold
-      hold: "Alt+"
-      tap: "→"
+    "&kp LA(DOWN)": "Alt+↓"
+    "&kp LA(UP)": "Alt+↑"
+    "&kp LA(LEFT)": "Alt+←"
+    "&kp LA(RIGHT)": "Alt+→"
     # GUI/Cmd + стрелки
-    "&kp LG(DOWN)":
-      type: hold
-      hold: "Cmd+"
-      tap: "↓"
-    "&kp LG(UP)":
-      type: hold
-      hold: "Cmd+"
-      tap: "↑"
-    "&kp LG(LEFT)":
-      type: hold
-      hold: "Cmd+"
-      tap: "←"
-    "&kp LG(RIGHT)":
-      type: hold
-      hold: "Cmd+"
-      tap: "→"
+    "&kp LG(DOWN)": "Cmd+↓"
+    "&kp LG(UP)": "Cmd+↑"
+    "&kp LG(LEFT)": "Cmd+←"
+    "&kp LG(RIGHT)": "Cmd+→"
     # Ctrl + другие навигационные клавиши
-    "&kp LC(HOME)":
-      type: hold
-      hold: "Ctrl+"
-      tap: "Home"
-    "&kp LC(END)":
-      type: hold
-      hold: "Ctrl+"
-      tap: "End"
-    "&kp LC(PG_UP)":
-      type: hold
-      hold: "Ctrl+"
-      tap: "PgUp"
-    "&kp LC(PG_DN)":
-      type: hold
-      hold: "Ctrl+"
-      tap: "PgDn"
-    "&kp LC(INSERT)":
-      type: hold
-      hold: "Ctrl+"
-      tap: "Ins"
-    "&kp LC(DEL)":
-      type: hold
-      hold: "Ctrl+"
-      tap: "Del"
-    "&kp LC(BSPC)":
-      type: hold
-      hold: "Ctrl+"
-      tap: "Bksp"
+    "&kp LC(HOME)": "Ctrl+Home"
+    "&kp LC(END)": "Ctrl+End"
+    "&kp LC(PG_UP)": "Ctrl+PgUp"
+    "&kp LC(PG_DN)": "Ctrl+PgDn"
+    "&kp LC(INSERT)": "Ctrl+Ins"
+    "&kp LC(DEL)": "Ctrl+Del"
+    "&kp LC(BSPC)": "Ctrl+Bksp"
     # Shift + другие навигационные клавиши
-    "&kp LS(HOME)":
-      type: hold
-      hold: "Shift+"
-      tap: "Home"
-    "&kp LS(END)":
-      type: hold
-      hold: "Shift+"
-      tap: "End"
-    "&kp LS(PG_UP)":
-      type: hold
-      hold: "Shift+"
-      tap: "PgUp"
-    "&kp LS(PG_DN)":
-      type: hold
-      hold: "Shift+"
-      tap: "PgDn"
-    "&kp LS(DEL)":
-      type: hold
-      hold: "Shift+"
-      tap: "Del"
-    "&kp LS(BSPC)":
-      type: hold
-      hold: "Shift+"
-      tap: "Bksp"
+    "&kp LS(HOME)": "Shift+Home"
+    "&kp LS(END)": "Shift+End"
+    "&kp LS(PG_UP)": "Shift+PgUp"
+    "&kp LS(PG_DN)": "Shift+PgDn"
+    "&kp LS(DEL)": "Shift+Del"
+    "&kp LS(BSPC)": "Shift+Bksp"
     # Alt + другие навигационные клавиши
-    "&kp LA(HOME)":
-      type: hold
-      hold: "Alt+"
-      tap: "Home"
-    "&kp LA(END)":
-      type: hold
-      hold: "Alt+"
-      tap: "End"
-    "&kp LA(DEL)":
-      type: hold
-      hold: "Alt+"
-      tap: "Del"
-    "&kp LA(BSPC)":
-      type: hold
-      hold: "Alt+"
-      tap: "Bksp"
+    "&kp LA(HOME)": "Alt+Home"
+    "&kp LA(END)": "Alt+End"
+    "&kp LA(DEL)": "Alt+Del"
+    "&kp LA(BSPC)": "Alt+Bksp"
     # GUI + другие навигационные клавиши
-    "&kp LG(HOME)":
-      type: hold
-      hold: "Cmd+"
-      tap: "Home"
-    "&kp LG(END)":
-      type: hold
-      hold: "Cmd+"
-      tap: "End"
-    "&kp LG(DEL)":
-      type: hold
-      hold: "Cmd+"
-      tap: "Del"
-    "&kp LG(BSPC)":
-      type: hold
-      hold: "Cmd+"
-      tap: "Bksp"
+    "&kp LG(HOME)": "Cmd+Home"
+    "&kp LG(END)": "Cmd+End"
+    "&kp LG(DEL)": "Cmd+Del"
+    "&kp LG(BSPC)": "Cmd+Bksp"
     # Двойные модификаторы + стрелки
-    "&kp LC(LA(DOWN))":
-      type: hold
-      hold: "Ctrl+Alt+"
-      tap: "↓"
-    "&kp LC(LA(UP))":
-      type: hold
-      hold: "Ctrl+Alt+"
-      tap: "↑"
-    "&kp LC(LA(LEFT))":
-      type: hold
-      hold: "Ctrl+Alt+"
-      tap: "←"
-    "&kp LC(LA(RIGHT))":
-      type: hold
-      hold: "Ctrl+Alt+"
-      tap: "→"
-    "&kp LC(LS(DOWN))":
-      type: hold
-      hold: "Ctrl+Shift+"
-      tap: "↓"
-    "&kp LC(LS(UP))":
-      type: hold
-      hold: "Ctrl+Shift+"
-      tap: "↑"
-    "&kp LC(LS(LEFT))":
-      type: hold
-      hold: "Ctrl+Shift+"
-      tap: "←"
-    "&kp LC(LS(RIGHT))":
-      type: hold
-      hold: "Ctrl+Shift+"
-      tap: "→"
+    "&kp LC(LA(DOWN))": "Ctrl+Alt+↓"
+    "&kp LC(LA(UP))": "Ctrl+Alt+↑"
+    "&kp LC(LA(LEFT))": "Ctrl+Alt+←"
+    "&kp LC(LA(RIGHT))": "Ctrl+Alt+→"
+    "&kp LC(LS(DOWN))": "Ctrl+Shift+↓"
+    "&kp LC(LS(UP))": "Ctrl+Shift+↑"
+    "&kp LC(LS(LEFT))": "Ctrl+Shift+←"
+    "&kp LC(LS(RIGHT))": "Ctrl+Shift+→"
+    "&kp LA(LS(DOWN))": "Alt+Shift+↓"
+    "&kp LA(LS(UP))": "Alt+Shift+↑"
+    "&kp LA(LS(LEFT))": "Alt+Shift+←"
+    "&kp LA(LS(RIGHT))": "Alt+Shift+→"
 
   zmk_keycode_map:
     LCTRL: $$mdi:apple-keyboard-control$$
