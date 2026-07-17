@@ -110,7 +110,7 @@ layers:
   - {t: ▽, type: trans}
   Navigation:
   - ''
-  - ''
+  - ''''
   - ''
   - ''
   - ''
@@ -130,7 +130,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - $$mdi:keyboard-esc$$
   - ''
-  - ''
+  - '"'
   - ''
   - ''
   - ''
