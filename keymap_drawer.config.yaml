@@ -54,41 +54,201 @@ draw_config:
   use_local_cache: true
 parse_config:
   preprocess: true
-  zmk_keycode_map:
-    LCTRL: $$mdi:apple-keyboard-control$$
-    LALT: $$mdi:apple-keyboard-option$$
-    LSHIFT: $$mdi:apple-keyboard-shift$$
-    LSHFT: $$mdi:apple-keyboard-shift$$
-    LGUI: $$mdi:apple-keyboard-command$$
-    RCTRL: $$mdi:apple-keyboard-control$$
-    RALT: $$mdi:apple-keyboard-option$$
-    RSHIFT: $$mdi:apple-keyboard-shift$$
-    RSHFT: $$mdi:apple-keyboard-shift$$
-    RGUI: $$mdi:apple-keyboard-command$$
-    UP: $$mdi:arrow-up-bold$$
-    DOWN: $$mdi:arrow-down-bold$$
-    LEFT: $$mdi:arrow-left-bold$$
-    RIGHT: $$mdi:arrow-right-bold$$
-    ENTER:
-      type: enter
-      tap: $$mdi:keyboard-return$$
-    ESC: $$mdi:keyboard-esc$$
-    TAB: $$mdi:keyboard-tab$$
-    SPACE: $$mdi:keyboard-space$$
-    BACKSPACE:
-      type: backspace
+
+  # === Маппинг для комбинаций модификаторов + навигационные клавиши ===
+  # Keymap-drawer не умеет автоматически склеивать модификатор + стрелку,
+  # поэтому перехватываем сырые биндинги до парсинга.
+  raw_binding_map:
+    # Ctrl + стрелки
+    "&kp LC(DOWN)":
+      type: hold
+      hold: $$mdi:apple-keyboard-control$$
+      tap: $$mdi:arrow-down-bold$$
+    "&kp LC(UP)":
+      type: hold
+      hold: $$mdi:apple-keyboard-control$$
+      tap: $$mdi:arrow-up-bold$$
+    "&kp LC(LEFT)":
+      type: hold
+      hold: $$mdi:apple-keyboard-control$$
+      tap: $$mdi:arrow-left-bold$$
+    "&kp LC(RIGHT)":
+      type: hold
+      hold: $$mdi:apple-keyboard-control$$
+      tap: $$mdi:arrow-right-bold$$
+    # Shift + стрелки
+    "&kp LS(DOWN)":
+      type: hold
+      hold: $$mdi:apple-keyboard-shift$$
+      tap: $$mdi:arrow-down-bold$$
+    "&kp LS(UP)":
+      type: hold
+      hold: $$mdi:apple-keyboard-shift$$
+      tap: $$mdi:arrow-up-bold$$
+    "&kp LS(LEFT)":
+      type: hold
+      hold: $$mdi:apple-keyboard-shift$$
+      tap: $$mdi:arrow-left-bold$$
+    "&kp LS(RIGHT)":
+      type: hold
+      hold: $$mdi:apple-keyboard-shift$$
+      tap: $$mdi:arrow-right-bold$$
+    # Alt + стрелки
+    "&kp LA(DOWN)":
+      type: hold
+      hold: $$mdi:apple-keyboard-option$$
+      tap: $$mdi:arrow-down-bold$$
+    "&kp LA(UP)":
+      type: hold
+      hold: $$mdi:apple-keyboard-option$$
+      tap: $$mdi:arrow-up-bold$$
+    "&kp LA(LEFT)":
+      type: hold
+      hold: $$mdi:apple-keyboard-option$$
+      tap: $$mdi:arrow-left-bold$$
+    "&kp LA(RIGHT)":
+      type: hold
+      hold: $$mdi:apple-keyboard-option$$
+      tap: $$mdi:arrow-right-bold$$
+    # GUI/Cmd + стрелки
+    "&kp LG(DOWN)":
+      type: hold
+      hold: $$mdi:apple-keyboard-command$$
+      tap: $$mdi:arrow-down-bold$$
+    "&kp LG(UP)":
+      type: hold
+      hold: $$mdi:apple-keyboard-command$$
+      tap: $$mdi:arrow-up-bold$$
+    "&kp LG(LEFT)":
+      type: hold
+      hold: $$mdi:apple-keyboard-command$$
+      tap: $$mdi:arrow-left-bold$$
+    "&kp LG(RIGHT)":
+      type: hold
+      hold: $$mdi:apple-keyboard-command$$
+      tap: $$mdi:arrow-right-bold$$
+    # Ctrl + другие навигационные клавиши
+    "&kp LC(HOME)":
+      type: hold
+      hold: $$mdi:apple-keyboard-control$$
+      tap: Home
+    "&kp LC(END)":
+      type: hold
+      hold: $$mdi:apple-keyboard-control$$
+      tap: End
+    "&kp LC(PG_UP)":
+      type: hold
+      hold: $$mdi:apple-keyboard-control$$
+      tap: PgUp
+    "&kp LC(PG_DN)":
+      type: hold
+      hold: $$mdi:apple-keyboard-control$$
+      tap: PgDn
+    "&kp LC(INSERT)":
+      type: hold
+      hold: $$mdi:apple-keyboard-control$$
+      tap: Ins
+    "&kp LC(DEL)":
+      type: hold
+      hold: $$mdi:apple-keyboard-control$$
+      tap: $$mdi:backspace-reverse-outline$$
+    "&kp LC(BSPC)":
+      type: hold
+      hold: $$mdi:apple-keyboard-control$$
       tap: $$mdi:backspace$$
-    BSPC:
-      type: backspace
+    # Shift + другие навигационные клавиши
+    "&kp LS(HOME)":
+      type: hold
+      hold: $$mdi:apple-keyboard-shift$$
+      tap: Home
+    "&kp LS(END)":
+      type: hold
+      hold: $$mdi:apple-keyboard-shift$$
+      tap: End
+    "&kp LS(PG_UP)":
+      type: hold
+      hold: $$mdi:apple-keyboard-shift$$
+      tap: PgUp
+    "&kp LS(PG_DN)":
+      type: hold
+      hold: $$mdi:apple-keyboard-shift$$
+      tap: PgDn
+    "&kp LS(DEL)":
+      type: hold
+      hold: $$mdi:apple-keyboard-shift$$
+      tap: $$mdi:backspace-reverse-outline$$
+    "&kp LS(BSPC)":
+      type: hold
+      hold: $$mdi:apple-keyboard-shift$$
       tap: $$mdi:backspace$$
-    DEL: $$mdi:backspace-reverse-outline$$
-    DELETE: $$mdi:backspace-reverse-outline$$
-    CAPSLOCK: $$mdi:apple-keyboard-caps$$
-    CAPS: $$mdi:apple-keyboard-caps$$
-    C_VOL_UP: $$mdi:volume-high$$
-    C_VOL_DN: $$mdi:volume-low$$
-    C_PP: $$mdi:play-pause$$
-    C_MUTE: $$mdi:volume-off$$
+    # Alt + другие навигационные клавиши
+    "&kp LA(HOME)":
+      type: hold
+      hold: $$mdi:apple-keyboard-option$$
+      tap: Home
+    "&kp LA(END)":
+      type: hold
+      hold: $$mdi:apple-keyboard-option$$
+      tap: End
+    "&kp LA(DEL)":
+      type: hold
+      hold: $$mdi:apple-keyboard-option$$
+      tap: $$mdi:backspace-reverse-outline$$
+    "&kp LA(BSPC)":
+      type: hold
+      hold: $$mdi:apple-keyboard-option$$
+      tap: $$mdi:backspace$$
+    # GUI + другие навигационные клавиши
+    "&kp LG(HOME)":
+      type: hold
+      hold: $$mdi:apple-keyboard-command$$
+      tap: Home
+    "&kp LG(END)":
+      type: hold
+      hold: $$mdi:apple-keyboard-command$$
+      tap: End
+    "&kp LG(DEL)":
+      type: hold
+      hold: $$mdi:apple-keyboard-command$$
+      tap: $$mdi:backspace-reverse-outline$$
+    "&kp LG(BSPC)":
+      type: hold
+      hold: $$mdi:apple-keyboard-command$$
+      tap: $$mdi:backspace$$
+    # Двойные модификаторы + стрелки (если используете)
+    "&kp LC(LA(DOWN))":
+      type: hold
+      hold: "Ctrl+Alt"
+      tap: $$mdi:arrow-down-bold$$
+    "&kp LC(LA(UP))":
+      type: hold
+      hold: "Ctrl+Alt"
+      tap: $$mdi:arrow-up-bold$$
+    "&kp LC(LA(LEFT))":
+      type: hold
+      hold: "Ctrl+Alt"
+      tap: $$mdi:arrow-left-bold$$
+    "&kp LC(LA(RIGHT))":
+      type: hold
+      hold: "Ctrl+Alt"
+      tap: $$mdi:arrow-right-bold$$
+    "&kp LC(LS(DOWN))":
+      type: hold
+      hold: "Ctrl+Shift"
+      tap: $$mdi:arrow-down-bold$$
+    "&kp LC(LS(UP))":
+      type: hold
+      hold: "Ctrl+Shift"
+      tap: $$mdi:arrow-up-bold$$
+    "&kp LC(LS(LEFT))":
+      type: hold
+      hold: "Ctrl+Shift"
+      tap: $$mdi:arrow-left-bold$$
+    "&kp LC(LS(RIGHT))":
+      type: hold
+      hold: "Ctrl+Shift"
+      tap: $$mdi:arrow-right-bold$$
+
   zmk_keycode_map:
     LCTRL: $$mdi:apple-keyboard-control$$
     LALT: $$mdi:apple-keyboard-option$$
