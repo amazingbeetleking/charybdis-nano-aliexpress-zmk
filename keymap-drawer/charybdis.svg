@@ -769,15 +769,13 @@ path.combo { stroke-width: 1; stroke:#A65437; fill: none; }
 <rect rx="6" ry="6" x="658" y="141" width="28" height="26" class="combo"/>
 <text x="672" y="154" class="combo tap">Alt+F4</text>
 </g>
-<g class="combo hold combopos-2">
-<rect rx="6" ry="6" x="602" y="74" width="28" height="26" class="combo hold"/>
-<text x="616" y="87" class="combo hold tap">←</text>
-<text x="616" y="98" class="combo hold hold">Alt+</text>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="602" y="74" width="28" height="26" class="combo"/>
+<text x="616" y="87" class="combo tap">Alt+←</text>
 </g>
-<g class="combo hold combopos-3">
-<rect rx="6" ry="6" x="609" y="131" width="28" height="26" class="combo hold"/>
-<text x="623" y="144" class="combo hold tap">↑</text>
-<text x="623" y="155" class="combo hold hold">Alt+</text>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="609" y="131" width="28" height="26" class="combo"/>
+<text x="623" y="144" class="combo tap">Alt+↑</text>
 </g>
 </g>
 </g>
@@ -1142,18 +1140,16 @@ path.combo { stroke-width: 1; stroke:#A65437; fill: none; }
 <g transform="translate(476, 147)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
-<g transform="translate(532, 147)" class="key hold keypos-26">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key hold"/>
-<text x="0" y="0" class="key hold tap">←</text>
-<text x="0" y="24" class="key hold hold">Ctrl+</text>
+<g transform="translate(532, 147)" class="key keypos-26">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">Ctrl+←</text>
 </g>
 <g transform="translate(588, 140)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
-<g transform="translate(644, 147)" class="key hold keypos-28">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key hold"/>
-<text x="0" y="0" class="key hold tap">→</text>
-<text x="0" y="24" class="key hold hold">Ctrl+</text>
+<g transform="translate(644, 147)" class="key keypos-28">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">Ctrl+→</text>
 </g>
 <g transform="translate(700, 161)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
