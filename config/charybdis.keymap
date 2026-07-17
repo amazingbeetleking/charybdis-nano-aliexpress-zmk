@@ -491,7 +491,7 @@ mt_rctl_rbkt: mt_rctl_rbkt {
     combo_apostrophe {
       key-positions = <1 2>;
       bindings = <&apostrophe>;
-      layers = <BASE SCR>;
+      layers = <BASE>;
     };
 
     combo_clc_word {
