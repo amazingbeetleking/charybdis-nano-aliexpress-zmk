@@ -243,9 +243,9 @@ layers:
   - ''
   - ''
   - ''
-  - {t: '$$mdi:arrow-left-bold$$', h: '$$mdi:apple-keyboard-control$$', type: hold}
+  - {t: ←, h: Ctrl+, type: hold}
   - ''
-  - {t: '$$mdi:arrow-right-bold$$', h: '$$mdi:apple-keyboard-control$$', type: hold}
+  - {t: →, h: Ctrl+, type: hold}
   - ''
   - {type: held}
   - ''
@@ -309,10 +309,10 @@ combos:
   k: Alt+F4
   l: [Base, Navigation]
 - p: [17, 18]
-  k: {t: '$$mdi:arrow-left-bold$$', h: '$$mdi:apple-keyboard-option$$', type: hold}
+  k: {t: ←, h: Alt+, type: hold}
   l: [Navigation]
 - p: [27, 28]
-  k: {t: '$$mdi:arrow-up-bold$$', h: '$$mdi:apple-keyboard-option$$', type: hold}
+  k: {t: ↑, h: Alt+, type: hold}
   l: [Navigation]
   s: 0.25
 - p: [13, 16]
