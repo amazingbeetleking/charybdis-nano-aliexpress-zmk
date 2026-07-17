@@ -769,13 +769,15 @@ path.combo { stroke-width: 1; stroke:#A65437; fill: none; }
 <rect rx="6" ry="6" x="658" y="141" width="28" height="26" class="combo"/>
 <text x="672" y="154" class="combo tap">Alt+F4</text>
 </g>
-<g class="combo combopos-2">
-<rect rx="6" ry="6" x="602" y="74" width="28" height="26" class="combo"/>
-<use href="#mdi:arrow-left-bold" xlink:href="#mdi:arrow-left-bold" x="609" y="80" height="14" width="14.0" class="combo tap glyph mdi:arrow-left-bold"/>
+<g class="combo hold combopos-2">
+<rect rx="6" ry="6" x="602" y="74" width="28" height="26" class="combo hold"/>
+<use href="#mdi:arrow-left-bold" xlink:href="#mdi:arrow-left-bold" x="609" y="80" height="14" width="14.0" class="combo hold tap glyph mdi:arrow-left-bold"/>
+<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="610" y="86" height="12" width="12.0" class="combo hold hold glyph mdi:apple-keyboard-option"/>
 </g>
-<g class="combo combopos-3">
-<rect rx="6" ry="6" x="609" y="131" width="28" height="26" class="combo"/>
-<use href="#mdi:arrow-up-bold" xlink:href="#mdi:arrow-up-bold" x="616" y="137" height="14" width="14.0" class="combo tap glyph mdi:arrow-up-bold"/>
+<g class="combo hold combopos-3">
+<rect rx="6" ry="6" x="609" y="131" width="28" height="26" class="combo hold"/>
+<use href="#mdi:arrow-up-bold" xlink:href="#mdi:arrow-up-bold" x="616" y="137" height="14" width="14.0" class="combo hold tap glyph mdi:arrow-up-bold"/>
+<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="617" y="143" height="12" width="12.0" class="combo hold hold glyph mdi:apple-keyboard-option"/>
 </g>
 </g>
 </g>
@@ -1140,16 +1142,18 @@ path.combo { stroke-width: 1; stroke:#A65437; fill: none; }
 <g transform="translate(476, 147)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
-<g transform="translate(532, 147)" class="key keypos-26">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:arrow-left-bold" xlink:href="#mdi:arrow-left-bold" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:arrow-left-bold"/>
+<g transform="translate(532, 147)" class="key hold keypos-26">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key hold"/>
+<use href="#mdi:arrow-left-bold" xlink:href="#mdi:arrow-left-bold" x="-7" y="-7" height="14" width="14.0" class="key hold tap glyph mdi:arrow-left-bold"/>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-6" y="12" height="12" width="12.0" class="key hold hold glyph mdi:apple-keyboard-control"/>
 </g>
 <g transform="translate(588, 140)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
-<g transform="translate(644, 147)" class="key keypos-28">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<use href="#mdi:arrow-right-bold" xlink:href="#mdi:arrow-right-bold" x="-7" y="-7" height="14" width="14.0" class="key tap glyph mdi:arrow-right-bold"/>
+<g transform="translate(644, 147)" class="key hold keypos-28">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key hold"/>
+<use href="#mdi:arrow-right-bold" xlink:href="#mdi:arrow-right-bold" x="-7" y="-7" height="14" width="14.0" class="key hold tap glyph mdi:arrow-right-bold"/>
+<use href="#mdi:apple-keyboard-control" xlink:href="#mdi:apple-keyboard-control" x="-6" y="12" height="12" width="12.0" class="key hold hold glyph mdi:apple-keyboard-control"/>
 </g>
 <g transform="translate(700, 161)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
