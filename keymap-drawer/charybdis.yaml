@@ -212,8 +212,8 @@ layers:
   - ''
   - ''
   - Sniper
-  - ''
-  - ''
+  - '&msc SCRL_UP'
+  - '&msc SCRL_DOWN'
   - PG DN
   - PG UP
   Scroll:
