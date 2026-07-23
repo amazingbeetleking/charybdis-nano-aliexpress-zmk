@@ -412,14 +412,14 @@ mt_rctl_rbkt: mt_rctl_rbkt {
     combo_CAPS {
       key-positions = <12 17>;
       bindings = <&kp CAPSLOCK>;
-      layers = <BASE>;
+      layers = <BASE POI>;
     };
 
 
     combo_new_window {
       key-positions = <7 8>;
       bindings = <&kp LG(E)>;
-      layers = <BASE>;
+      layers = <BASE POI>;
     };
 
     combo_close_1 {
@@ -449,13 +449,13 @@ mt_rctl_rbkt: mt_rctl_rbkt {
     combo_luanguage1 {
       key-positions = <13 16>;
       bindings = <&kp LG(SPACE)>;
-      layers =<BASE>;
+      layers =<BASE POI>;
     };
 
     combo_luanguage2 {
       key-positions = <31 34>;
       bindings = <&kp LG(SPACE)>;
-      layers =<BASE>;
+      layers =<BASE POI>;
     };
 
     combo_unlock {
@@ -473,25 +473,25 @@ mt_rctl_rbkt: mt_rctl_rbkt {
     combo_alt_question {
       key-positions = <3 6>;
       bindings = <&alt_question>;
-      layers = <BASE>;
+      layers = <BASE POI>;
     };
 
     combo_alt_exclamation {
       key-positions = <23 26>;
       bindings = <&kp EXCL>;
-      layers = <BASE>;
+      layers = <BASE POI>;
     };
 
     combo_alt_doublequote {
       key-positions = <27 28>;
       bindings = <&alt_doublequote>;
-      layers = <BASE>;
+      layers = <BASE POI>;
     };
 
     combo_apostrophe {
       key-positions = <1 2>;
       bindings = <&apostrophe>;
-      layers = <BASE>;
+      layers = <BASE POI>;
     };
 
     combo_clc_word {
@@ -612,14 +612,14 @@ mt_rctl_rbkt: mt_rctl_rbkt {
       display-name = "Pointer";
       bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &none         &none         &none         &none         &none              &none         &none         &none         &none         &none
+    &none         &none         &none         &none         &none             &kp C_MUTE    &mkp LCLK    &mkp RCLK      &none         &none
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &none             &kp C_VOL_UP  &kp RSHFT     &kp RCTRL     &kp RALT      &kp RGUI
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &none        &kp LC(X)     &kp LC(C)     &kp LC(V)     &none             &kp C_VOL_DN  &kp C_PP       &none         &none         &none
+    &none        &kp LC(X)     &kp LC(C)     &kp LC(V)     &none             &kp C_VOL_DN   &kp C_PP      &kp C_STOP     &none         &none
 // ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
 //                              ╭─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────╮
-                                 &mo SNI       &mkp LCLK     &mkp RCLK         &msc SCRL_DOWN &msc SCRL_UP
+                                 &mo SNI     &msc SCRL_DOWN &msc SCRL_UP       &kp PG_DN     &kp PG_UP    
 //                              ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────╯
       >;
     };
@@ -629,14 +629,14 @@ mt_rctl_rbkt: mt_rctl_rbkt {
       display-name = "Scroll";
       bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &none         &none         &none         &none        &none              &none         &none         &none         &none        &none
+    &trans        &trans        &trans        &trans       &trans             &trans        &trans        &trans        &trans       &trans 
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &none         &none         &none         &none        &none              &kp C_PREV    &kp C_VOL_DN  &kp C_MUTE    &kp C_VOL_UP  &kp C_NEXT
+    &trans        &trans        &trans        &trans       &trans             &trans        &trans        &trans        &trans       &trans 
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &none         &none         &none         &none        &none              &none         &none         &none         &none         &none
+    &trans        &trans        &trans        &trans       &trans             &trans        &trans        &trans        &trans       &trans 
 // ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
 //                              ╭─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────╮
-                                 &trans        &none        &none              &kp C_STOP    &kp C_PP 
+                                 &trans        &trans       &trans             &trans       &trans 
 //                              ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────╯
       >;
     };
