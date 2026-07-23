@@ -186,9 +186,9 @@ layers:
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  - ''
+  - $$mdi:volume-off$$
+  - '&mkp LCLK'
+  - '&mkp RCLK'
   - ''
   - ''
   - $$mdi:apple-keyboard-command$$
@@ -208,50 +208,50 @@ layers:
   - ''
   - $$mdi:volume-low$$
   - $$mdi:play-pause$$
-  - ''
+  - STOP
   - ''
   - ''
   - Sniper
-  - '&mkp LCLK'
-  - '&mkp RCLK'
   - '&msc SCRL_DOWN'
   - '&msc SCRL_UP'
+  - PG DN
+  - PG UP
   Scroll:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - PREV
-  - $$mdi:volume-low$$
-  - $$mdi:volume-off$$
-  - $$mdi:volume-high$$
-  - NEXT
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - ''
-  - ''
-  - STOP
-  - $$mdi:play-pause$$
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Sniper:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -297,11 +297,11 @@ combos:
   l: [Base]
 - p: [12, 17]
   k: $$mdi:apple-keyboard-caps$$
-  l: [Base]
+  l: [Base, Pointer]
   s: -0.25
 - p: [7, 8]
   k: Gui+E
-  l: [Base]
+  l: [Base, Pointer]
 - p: [20, 21]
   k: Alt+F4
   l: [Base, Navigation]
@@ -317,11 +317,11 @@ combos:
   s: 0.25
 - p: [13, 16]
   k: Gui+Space
-  l: [Base]
+  l: [Base, Pointer]
   s: 0.25
 - p: [31, 34]
   k: Gui+Space
-  l: [Base]
+  l: [Base, Pointer]
 - p: [0, 4]
   k: '&studio_unlock'
   l: [Base]
@@ -330,17 +330,17 @@ combos:
   l: [Base]
 - p: [3, 6]
   k: '&alt_question'
-  l: [Base]
+  l: [Base, Pointer]
 - p: [23, 26]
   k: '!'
-  l: [Base]
+  l: [Base, Pointer]
 - p: [27, 28]
   k: '&alt_doublequote'
-  l: [Base]
+  l: [Base, Pointer]
   s: 0.25
 - p: [1, 2]
   k: '&apostrophe'
-  l: [Base]
+  l: [Base, Pointer]
 - p: [13, 14]
   k: '&clc_word'
   l: [Base]
