@@ -80,8 +80,8 @@ layers:
   - ']'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&alt_lbkt'
-  - '&alt_rbkt'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - ''
   - '['
   - $
@@ -100,8 +100,8 @@ layers:
   - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&alt_lbrc'
-  - '&alt_rbrc'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - (
   - )
@@ -118,10 +118,10 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - '&sys_reset'
   - $$mdi:apple-keyboard-command$$
-  - '&mt_lalt_lbkt LALT 0'
-  - '&mt_rctl_rbkt RCTRL 0'
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
   - {t: '!', h: '$$mdi:apple-keyboard-shift$$'}
   - ''
   - $$mdi:arrow-left-bold$$
@@ -187,8 +187,8 @@ layers:
   - ''
   - ''
   - $$mdi:volume-off$$
-  - '&mkp LCLK'
-  - '&mkp RCLK'
+  - ''
+  - ''
   - ''
   - ''
   - $$mdi:apple-keyboard-command$$
@@ -197,10 +197,10 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - ''
   - $$mdi:volume-high$$
-  - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-command$$
+  - '&mkp LCLK'
+  - '&mkp RCLK'
+  - ''
+  - ''
   - {type: held}
   - Ctl+X
   - Ctl+C
@@ -328,12 +328,6 @@ combos:
 - p: [23, 24]
   k: $$mdi:backspace-reverse-outline$$
   l: [Base]
-- p: [3, 6]
-  k: '&alt_question'
-  l: [Base, Scroll]
-- p: [23, 26]
-  k: '!'
-  l: [Base, Scroll]
 - p: [27, 28]
   k: '&alt_doublequote'
   l: [Base, Scroll]
@@ -341,9 +335,3 @@ combos:
 - p: [1, 2]
   k: '&apostrophe'
   l: [Base, Scroll]
-- p: [13, 14]
-  k: '&clc_word'
-  l: [Base]
-- p: [15, 16]
-  k: '&clear_word'
-  l: [Base]
