@@ -78,11 +78,11 @@ layers:
   - '*'
   - (
   - ']'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - ''
+  - ''
+  - ''
+  - ''
+  - '&sys_reset'
   - '['
   - $
   - '%'
@@ -98,11 +98,11 @@ layers:
   - '@'
   - '#'
   - \
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - (
   - )
   - _
@@ -118,7 +118,7 @@ layers:
   - ''
   - ''
   - ''
-  - '&sys_reset'
+  - ''
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
