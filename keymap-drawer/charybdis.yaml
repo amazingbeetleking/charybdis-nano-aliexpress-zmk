@@ -46,7 +46,7 @@ layers:
   - '&alt_semi'
   - '['
   - ']'
-  - {t: ▽, type: trans}
+  - ''
   - '['
   - '4'
   - '5'
@@ -66,7 +66,7 @@ layers:
   - '&alt_comma'
   - '['
   - ']'
-  - {t: ▽, type: trans}
+  - ''
   - '&alt_dot'
   - '0'
   - '-'
@@ -88,7 +88,7 @@ layers:
   - '%'
   - ^
   - +
-  - {t: ▽, type: trans}
+  - ''
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
@@ -103,11 +103,11 @@ layers:
   - ''
   - ''
   - ''
-  - '!'
+  - '&caps_word'
   - '&alt_question'
   - _
   - {type: held}
-  - {t: ▽, type: trans}
+  - ''
   Navigation:
   - ''
   - ''''
