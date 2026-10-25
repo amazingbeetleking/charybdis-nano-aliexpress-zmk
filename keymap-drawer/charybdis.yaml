@@ -145,30 +145,30 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:backspace-reverse-outline$$
   Function:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - F13
+  - F14
+  - F15
+  - F16
+  - F17
   - PSCRN
   - F7
   - F8
   - F9
   - F12
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
-  - $$mdi:apple-keyboard-shift$$
+  - {t: F18, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: F19, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F20, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F21, h: '$$mdi:apple-keyboard-shift$$'}
   - ''
   - INS
-  - F4
-  - F5
-  - F6
-  - F11
+  - {t: F4, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F5, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F6, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: F11, h: '$$mdi:apple-keyboard-command$$'}
   - ''
-  - ''
-  - ''
-  - ''
+  - F22
+  - F23
+  - '24'
   - ''
   - KP NUM
   - F1
@@ -178,7 +178,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
-  - Ctl+KP MINUS
+  - '&alt_em_dash'
   - '|'
   Pointer:
   - ''
@@ -217,41 +217,41 @@ layers:
   - PG DN
   - PG UP
   Scroll:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-shift$$
+  - ''
+  - ''
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '&msc SCRL_UP'
+  - '&msc SCRL_DOWN'
+  - PG DN
+  - PG UP
   Sniper:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -297,7 +297,7 @@ combos:
   l: [Base]
 - p: [12, 17]
   k: $$mdi:apple-keyboard-caps$$
-  l: [Base, Scroll]
+  l: [Base]
   s: -0.25
 - p: [7, 8]
   k: Gui+E
@@ -317,11 +317,8 @@ combos:
   s: 0.25
 - p: [13, 16]
   k: Gui+Space
-  l: [Base, Scroll]
+  l: [Base]
   s: 0.25
-- p: [31, 34]
-  k: Gui+Space
-  l: [Base, Scroll]
 - p: [0, 4]
   k: '&studio_unlock'
   l: [Base]
@@ -330,8 +327,8 @@ combos:
   l: [Base]
 - p: [27, 28]
   k: '&alt_doublequote'
-  l: [Base, Scroll]
+  l: [Base]
   s: 0.25
 - p: [1, 2]
   k: '&apostrophe'
-  l: [Base, Scroll]
+  l: [Base]
