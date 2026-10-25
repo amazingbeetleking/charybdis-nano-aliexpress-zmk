@@ -207,6 +207,17 @@ alt_greater: alt_greater {
          , <&macro_release &kp LALT>
          ;
  };
+    alt_em_dash: alt_em_dash {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      wait-ms = <30>;
+      tap-ms = <10>;
+      bindings
+          = <&macro_press &kp LALT>
+          , <&macro_tap &kp KP_N0 &kp KP_N1 &kp KP_N5 &kp KP_N1>
+          , <&macro_release &kp LALT>
+          ;
+};
 };
 
  behaviors {
@@ -310,7 +321,7 @@ alt_greater: alt_greater {
     combo_CAPS {
       key-positions = <12 17>;
       bindings = <&kp CAPSLOCK>;
-      layers = <BASE SCR>;
+      layers = <BASE>;
     };
 
 
@@ -347,14 +358,9 @@ alt_greater: alt_greater {
     combo_luanguage1 {
       key-positions = <13 16>;
       bindings = <&kp LG(SPACE)>;
-      layers =<BASE SCR>;
+      layers =<BASE>;
     };
 
-    combo_luanguage2 {
-      key-positions = <31 34>;
-      bindings = <&kp LG(SPACE)>;
-      layers =<BASE SCR>;
-    };
 
     combo_unlock {
       key-positions = <0 4>;
@@ -372,13 +378,13 @@ alt_greater: alt_greater {
     combo_alt_doublequote {
       key-positions = <27 28>;
       bindings = <&alt_doublequote>;
-      layers = <BASE SCR>;
+      layers = <BASE>;
     };
 
     combo_apostrophe {
       key-positions = <1 2>;
       bindings = <&apostrophe>;
-      layers = <BASE SCR>;
+      layers = <BASE>;
     };
 
   };
@@ -404,7 +410,7 @@ alt_greater: alt_greater {
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
     &kp Q         &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp P
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &hml LGUI A   &hml LALT S   &hml LCTRL D  &hml LSHFT F  &kp G             &kp H         &hml RSHFT J  &hml RCTRL K  &hml RALT L   &hml RGUI SEMI
+    &hml LGUI A   &hml LALT S   &hml LCTRL D  &hml LSHFT F  &kp G             &kp H         &hmr RSHFT J  &hmr RCTRL K  &hmr RALT L   &hmr RGUI SEMI
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     &lt POI Z     &kp X         &kp C         &kp V         &kp B             &kp N         &kp M         &kp COMMA     &kp DOT       &lt POI FSLH
 // ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
@@ -421,7 +427,7 @@ alt_greater: alt_greater {
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────────────┬─────────────┬─────────────┬─────────────╮
     &kp GRAVE     &kp N7        &kp N8        &kp N9        &kp RBKT          &alt_greater    &alt_semi           &kp LBKT      &kp RBKT      &trans
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────────────┼─────────────┼─────────────┼─────────────┤
-    &kp LBKT      &kp N4        &kp N5        &kp N6        &kp EQUAL         &alt_colon    &quest_shift RSHFT 0  &mt LCTRL LPAR &mt LALT RPAR &kp RGUI
+    &kp LBKT      &kp N4        &kp N5        &kp N6        &kp EQUAL         &alt_colon    &quest_shift RSHFT 0  &hmr RCTRL LPAR &hmr RALT RPAR  &kp RGUI
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────────────┼─────────────┼─────────────┼─────────────┤
     &kp APOS      &kp N1        &kp N2        &kp N3        &kp KP_DIVIDE     &alt_less      &alt_comma           &kp LBRC      &kp RBRC      &trans
 // ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────────────┴─────────────┴─────────────┴─────────────╯
@@ -470,14 +476,14 @@ alt_greater: alt_greater {
       display-name = "Function";
       bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &none         &none         &none         &none         &none              &kp PSCRN     &kp F7        &kp F8        &kp F9        &kp F12
+    &kp F13       &kp F14       &kp F15       &kp F16       &kp F17           &kp PSCRN     &kp F7        &kp F8        &kp F9        &kp F12
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT      &none            &kp INS       &kp F4        &kp F5        &kp F6        &kp F11
-// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-     &none         &none        &none         &none         &none            &kp KP_NUM    &kp F1        &kp F2        &kp F3        &kp F10
+    &hml LGUI F18  &hml LALT F19  &hml LCTRL F20 &hml LSHFT F21  &none     &kp INS       &hmr RSHFT F4 &hmr RCTRL F5  &hmr RALT F6   &hmr RGUI F11
+ //├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+     &none         &kp F22      &kp F23       &kp 24        &none             &kp KP_NUM     &kp F1        &kp F2        &kp F3        &kp F10
 // ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
 //                              ╭─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────╮
-                                 &trans        &trans        &trans            &kp LC(KP_MINUS) &kp PIPE
+                                 &trans        &trans        &trans            &alt_em_dash &kp PIPE
 //                              ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────╯
       >;
     };
@@ -504,14 +510,14 @@ alt_greater: alt_greater {
       display-name = "Scroll";
       bindings = <
 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-    &trans        &trans        &trans        &trans       &trans             &trans        &trans        &trans        &trans       &trans 
+    &none         &none         &none         &none         &none             &none         &none         &none         &none         &none 
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &trans        &trans        &trans        &trans       &trans             &trans        &trans        &trans        &trans       &trans 
+    &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &none             &none         &kp RSHFT     &kp RCTRL     &kp RALT      &kp RGUI
 // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-    &trans        &trans        &trans        &trans       &trans             &trans        &trans        &trans        &trans       &trans 
+    &none         &none         &none         &none         &none             &none         &none         &none         &none         &none  
 // ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
 //                              ╭─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────╮
-                                 &trans        &trans       &trans             &trans       &trans 
+                                 &trans       &msc SCRL_UP  &msc SCRL_DOWN     &kp PG_DN     &kp PG_UP 
 //                              ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────╯
       >;
     };
