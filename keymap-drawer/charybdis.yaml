@@ -295,10 +295,6 @@ combos:
 - p: [21, 22]
   k: '&mkp RCLK'
   l: [Base]
-- p: [12, 17]
-  k: $$mdi:apple-keyboard-caps$$
-  l: [Base]
-  s: -0.25
 - p: [7, 8]
   k: Gui+E
   l: [Base, Scroll]
@@ -314,10 +310,6 @@ combos:
 - p: [27, 28]
   k: Alt+↑
   l: [Navigation]
-  s: 0.25
-- p: [13, 16]
-  k: Gui+Space
-  l: [Base]
   s: 0.25
 - p: [0, 4]
   k: '&studio_unlock'
