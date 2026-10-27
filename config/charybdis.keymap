@@ -315,12 +315,6 @@ td_caps: tap_dance_caps {
       layers = <BASE>;
     };
 
-    combo_CAPS {
-      key-positions = <12 17>;
-      bindings = <&kp CAPSLOCK>;
-      layers = <BASE>;
-    };
-
 
     combo_new_window {
       key-positions = <7 8>;
@@ -350,12 +344,6 @@ td_caps: tap_dance_caps {
       key-positions = <27 28>;
       bindings = <&kp LA(UP)>;
       layers = <NAVI>;
-    };
-
-    combo_luanguage1 {
-      key-positions = <13 16>;
-      bindings = <&kp LG(SPACE)>;
-      layers =<BASE>;
     };
 
 
