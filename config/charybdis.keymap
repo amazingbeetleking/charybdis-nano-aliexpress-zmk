@@ -287,17 +287,14 @@ alt_greater: alt_greater {
   keep-mods = <(MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
 };
 
+td_caps: tap_dance_caps {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp CAPS>, <&caps_word>;
+        };
 
 
-// краткое нажатие - вопросительный знак, долгое нажатие - shift
-     quest_shift: quest_shift {
-     compatible = "zmk,behavior-hold-tap";
-     #binding-cells = <2>;
-     flavor = "tap-preferred";    // или "balanced"
-     tapping-term-ms = <150>;     // меньше задержка
-     quick-tap-ms = <175>;        // мгновенно при повторах
-     bindings = <&kp>, <&alt_question>;
-   };
 
  };
    
@@ -449,7 +446,7 @@ alt_greater: alt_greater {
     &kp DQT       &kp EXCL      &kp AT        &kp HASH      &kp BSLH          &none         &none         &none         &none         &none
 // ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
 //                              ╭─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────╮
-                                 &caps_word      &alt_question   &kp UNDER       &none         &none
+                                 &td_caps     &alt_question   &kp UNDER       &none         &none
 //                              ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────╯
       >;
     };
