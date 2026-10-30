@@ -17,6 +17,8 @@
 #define POI  5
 #define SCR  6
 #define SNI  7
+#define GAME  8
+#define EXTRA 9
 
 // Aliases for module compatibility
 #define SCROLL  SCR
