@@ -37,6 +37,8 @@
 #define POI  5
 #define SCR  6
 #define SNI  7
+#define GAME  8
+#define EXTRA 9
 
 / {
   macros {
@@ -294,8 +296,6 @@ td_caps: tap_dance_caps {
             bindings = <&kp CAPS>, <&caps_word>;
         };
 
-
-
  };
    
    combos {
@@ -359,7 +359,6 @@ td_caps: tap_dance_caps {
       layers = <BASE>;
     };
 
-
     combo_alt_doublequote {
       key-positions = <27 28>;
       bindings = <&alt_doublequote>;
@@ -370,6 +369,48 @@ td_caps: tap_dance_caps {
       key-positions = <1 2>;
       bindings = <&apostrophe>;
       layers = <BASE>;
+    };
+
+    combo_languge {
+      key-positions = <13 16>;
+      bindings = <&kp LG(SPACE)>;
+      layers = <BASE>;
+      require-prior-idle-ms = <250>;
+    };
+
+    combo_esc {
+       timeout-ms = <40>;
+       key-positions = <23 24>;
+       bindings = <&kp ESC>;
+       layers = <GAME>;           
+    };
+
+     combo_f5 {
+         timeout-ms = <40>;
+         key-positions = <1 2>;
+         bindings = <&kp F5>;
+         layers = <GAME>;          
+     };
+
+     combo_f6 {
+         timeout-ms = <40>;
+         key-positions = <21 22>;
+         bindings = <&kp F6>;
+         layers = <GAME>;     
+      };
+
+ combo_game_on {
+        timeout-ms = <40>;
+        key-positions = <0 4>;
+        bindings = <&tog GAME>;
+        layers = <NUMB>;
+    };
+
+    combo_game_off {
+        timeout-ms = <40>;
+        key-positions = <0 4>;
+        bindings = <&to BASE>;
+        layers = <GAME>;
     };
 
   };
@@ -523,6 +564,41 @@ td_caps: tap_dance_caps {
 //                              ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────╯
       >;
     };
+
+    gaming_base_layer {
+      label = "GAME";
+      display-name = "Gaming";
+      bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ 
+    &kp ESC       &kp Q         &kp W         &kp E         &kp F             &trans        &trans        &trans        &trans        &trans       
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    &kp LCTRL       &kp A         &kp S        &kp D       &kp N5           &trans        &trans        &trans        &trans        &trans       
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    &kp LSHIFT    &kp N1        &kp N2         &kp N3       &kp N4             &trans        &trans        &trans        &trans        &trans       
+// ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
+//                              ╭─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────╮
+                                 &mo  EXTRA     &kp SPACE     &kp R              &trans        &trans        
+//                              ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+      >;
+    };
+
+    gaming_weapon_layer {
+      label = "EXTRA";
+      display-name = "Weapons";
+      bindings = <
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮ 
+    &kp N1        &kp N2        &kp N3        &kp N4        &kp N5            &trans        &trans        &trans        &trans        &trans       
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    &none         &none         &none         &none         &none             &trans        &trans        &trans        &trans        &trans       
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
+    &none         &none         &none         &none         &none             &trans        &trans        &trans        &trans        &trans       
+// ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
+//                              ╭─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────╮
+                                 &trans        &trans        &trans            &trans        &trans        
+//                              ╰─────────────┴─────────────┴─────────────╯   ╰─────────────┴─────────────╯
+      >;
+    };
+
 
   };
 };
