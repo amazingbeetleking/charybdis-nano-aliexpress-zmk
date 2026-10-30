@@ -165,12 +165,12 @@ layers:
   - {t: F5, h: '$$mdi:apple-keyboard-control$$'}
   - {t: F6, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F11, h: '$$mdi:apple-keyboard-command$$'}
-  - ''
+  - KP NUM
   - F22
   - F23
   - '24'
   - ''
-  - KP NUM
+  - '&td_caps'
   - F1
   - F2
   - F3
