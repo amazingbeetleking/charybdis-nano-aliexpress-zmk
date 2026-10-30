@@ -288,6 +288,78 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  Gaming:
+  - $$mdi:keyboard-esc$$
+  - Q
+  - W
+  - E
+  - F
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:apple-keyboard-control$$
+  - A
+  - S
+  - D
+  - '5'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - $$mdi:apple-keyboard-shift$$
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Weapons
+  - $$mdi:keyboard-space$$
+  - R
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Weapons:
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
 combos:
 - p: [11, 12]
   k: '&mkp LCLK'
@@ -295,6 +367,7 @@ combos:
 - p: [21, 22]
   k: '&mkp RCLK'
   l: [Base]
+  s: 0.25
 - p: [7, 8]
   k: Gui+E
   l: [Base, Scroll]
@@ -314,9 +387,11 @@ combos:
 - p: [0, 4]
   k: '&studio_unlock'
   l: [Base]
+  s: 0.5
 - p: [23, 24]
   k: $$mdi:backspace-reverse-outline$$
   l: [Base]
+  s: 0.25
 - p: [27, 28]
   k: '&alt_doublequote'
   l: [Base]
@@ -324,3 +399,27 @@ combos:
 - p: [1, 2]
   k: '&apostrophe'
   l: [Base]
+  s: 0.25
+- p: [13, 16]
+  k: Gui+Space
+  l: [Base]
+- p: [23, 24]
+  k: $$mdi:keyboard-esc$$
+  l: [Gaming]
+  s: 0.25
+- p: [1, 2]
+  k: F5
+  l: [Gaming]
+  s: 0.25
+- p: [21, 22]
+  k: F6
+  l: [Gaming]
+  s: 0.25
+- p: [0, 4]
+  k: {t: Gaming, h: toggle}
+  l: [Number]
+  s: 0.5
+- p: [0, 4]
+  k: {t: Base, h: toggle}
+  l: [Gaming]
+  s: 0.5
